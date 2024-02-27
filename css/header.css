@@ -10,9 +10,8 @@
    padding: 0 22px;
 }
 .header .wrap a.logo{
-   
    font-size: 0;
-   background-image: url(../img/logo.PNG);
+   background-image: url(../img/logo.png);
    display: block;
    width: 90px;
    height: 74px;
@@ -34,4 +33,9 @@
 
 .header .wrap ul li{
    padding-left: 40px;
+}
+
+.ham{
+   
+   display: none;
 }

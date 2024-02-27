@@ -12,7 +12,8 @@ section#skill .wrap .skill{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 73%;
+  margin: 0 auto;
 }
 
 section#skill .wrap .skill>div{
@@ -24,7 +25,6 @@ section#skill .wrap .skill .skill_left{
   font-size: 60px;
   display: flex;
   align-items: center;
-  justify-content: right;
   flex-direction: column;
 }
 section#skill .wrap .skill .skill_left>h2{
@@ -40,9 +40,8 @@ section#skill .wrap .skill .skill_left p{
 }
 section#skill .wrap .skill .skill_right{
   display: flex;
-  justify-content: space-between;
 }
-section#skill .wrap .skill .skill_right h3{
+section#skill .wrap .skill h3{
   font-size: 28px;
   text-align: center;
   color: white;
@@ -66,9 +65,9 @@ section#skill .wrap .skill .skill_right article{
 }
 
 section#skill .wrap .skill .skill_right .boxA{
+  margin-right: 45px;
 }
 section#skill .wrap .skill .skill_right .boxA article>div{
-   
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;

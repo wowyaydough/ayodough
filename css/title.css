@@ -3,7 +3,6 @@ main{
   background-color:black;
 }
 div#title {
-  min-height: 800px;
   background-image: url(../img/title2.jpg);
 }
 

@@ -114,3 +114,11 @@ body{
   display: flex;
   align-items: center; 
 }
+
+.ham::after{
+  content:"";
+  border-top: 3px solid white;
+  
+  width: 21px;
+  height: 24px;
+}
