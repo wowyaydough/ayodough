@@ -54,8 +54,35 @@
                autoplaySpeed: 2000,
                speed:2000,
                dots:true,
-               arrows:true
-           });
+               arrows:true,
+               responsive: [
+           {
+            breakpoint: 769,
+                    settings: {
+                        infinite: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 1000,
+                        speed:1000,
+                        dots:true,
+                        arrows:false
+           }},
+           {
+            breakpoint: 384,
+                    settings: {
+                        infinite: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 1000,
+                        speed:1000,
+                        dots:true,
+                        arrows:false
+                     }}
+                  ]
+         });
+
            $('.portfolio2').slick({
                infinite: true,
                slidesToShow: 1,
@@ -64,10 +91,35 @@
                autoplaySpeed: 2000,
                speed:2000,
                dots:true,
-               arrows:true
-           });
-         }
-   );
+               arrows:true,
+               responsive: [
+           {
+            breakpoint: 769,
+                    settings: {
+                        infinite: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 1000,
+                        speed:1000,
+                        dots:true,
+                        arrows:false,
+                    }},
+                    {
+            breakpoint: 384,
+                    settings: {
+                        infinite: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 1000,
+                        speed:1000,
+                        dots:true,
+                        arrows:false
+
+           }}]
+         });
+      });
    </script>
    <!-- // 헤더 메뉴  -->
    <script>
@@ -98,7 +150,7 @@
       });
    </script>
 
-   <!-- 타이틀 영상 배경
+   <!-- 타이틀 영상 배경 -->
    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/css/jquery.mb.YTPlayer.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/jquery.mb.YTPlayer.min.js"></script>
 </head>
@@ -111,7 +163,7 @@
    jQuery( function() { // $(document).ready(function(){});
       jQuery( '#background' ).YTPlayer();
    });
-</script> -->
+</script>
 <body>
    <!-- header -->
    <div class="header">
@@ -134,11 +186,8 @@
             <h2 class="typing_effect2">답</h2>
             <h2 class="typing_effect3">게,&nbsp;</h2>
             <h2 class="typing_effect4">새</h2>
-            <h2 class="typing_effect5">롭<span class="block"></span></h2>
-            <h2 class="typing_effect6">게<span class="block"></span></h2>
-         </div>
          <div class="wave flex">
-            <p> 오늘을 살자</p><br>
+            <p class="today"> 오늘을 살자</p><br>
             <div class="flex">
                <p class="wave_effect4 textC1">웹</p>
                <p class="wave_effect4 textC2">퍼</p>
@@ -155,7 +204,7 @@
          </div>
        </div>
        <!-- 유튜브 영상 -->
-       <!-- <div id="background" class="player" data-property="{
+         <!-- <div id="background" class="player" data-property="{
          videoURL: 'https://www.youtube.com/watch?v=6lKw-KZbM1Q',
          mute: true,
          showControls: false,
@@ -168,7 +217,7 @@
          startAt: 0,
          opacity: 1
        }">
-       </div> -->
+       </div>  -->
   </div>
 
    <!-- about -->

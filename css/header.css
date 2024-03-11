@@ -9,6 +9,7 @@
    animation-timing-function: ease-in; 
    animation-direction: reverse;
    animation-delay: 0.8s;
+   top: 0;
 } 
 @keyframes hd{
    0%{

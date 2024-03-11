@@ -1,6 +1,6 @@
 section#contact{
    background: linear-gradient(#2f8add,#3883c9);
-   height: 88vh;
+   height: 100vh;
  }
 
 section#contact .wrap{
@@ -30,6 +30,7 @@ section#contact p a{
   color: white;
 }
  section#contact figure{   
+  padding-bottom: 3vh;
  }
  section#contact figure img{ 
    width: 388px;
