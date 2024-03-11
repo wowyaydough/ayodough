@@ -1,0 +1,438 @@
+@media screen and (max-width:1024px){
+/*  header  */
+  .header .wrap ul li{ 
+  padding-left: 75px;
+  }
+  
+  /*  title  */
+  div#title{
+  background-position: center;
+  } 
+  div#title .wrap{
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  }
+  div#title .wrap>div{
+  height: 100%;
+  }
+  div#title .wrap h2{   
+  font-size: 35px;
+  }
+  div#title .wrap p{
+  font-size: 35px;
+  }
+  div#title .wrap .typing{
+  height: initial;
+  }
+  div#title .wrap .wave{
+  height: initial;
+  }
+/*  about  */
+  section#about{
+  height: 700px;
+  margin-top: -33px;
+  }
+  section#about .wrap{
+    
+  }
+  section#about .about{
+    
+  }
+  section#about .about::before{ 
+  width: 35vw;
+  height: 28vw;
+  position: absolute;
+  left: 9%;
+  top: -6%;
+    
+  }
+  section .wrap > h2{
+    
+  padding-top: 100px;
+  }section .wrap .animation_about.show{
+    
+  }
+  section#about .about_left article img{
+    
+  }
+  
+/*  skill  */
+  section#skill{
+    min-height: 600px;
+  }
+  section#skill .wrap figure img{  
+  width: 5vw;
+  }
+  section#skill .wrap #detail em{
+    width:83vw;
+  }
+  section#skill .wrap #detail p.top{
+    width:83vw;
+  }
+  section#skill .wrap #detail > div{
+    
+  width: 70vw;
+  }
+  
+  section#skill .wrap #detail p.SKd{
+    
+  font-size: 15px;
+  }
+/*  portfolio  */
+  section#portfolio{
+  min-height: 900px;
+  height: 100vh;
+  }
+  section#portfolio .wrap{
+    
+  display: flex;
+  flex-direction: column;
+  }
+  section#portfolio .wrap .portfolio_top{
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  }
+  section#portfolio .wrap .portfolio_top h2{
+  transform: initial;
+  }
+  
+  section#portfolio .wrap .portfolio_top p{ 
+  }
+
+  section#portfolio .wrap .portfolio_bottom{
+  display: flex;
+  justify-content: center;
+  }
+  section#portfolio .wrap .detail{
+  display: flex;
+  align-items: center;
+  }
+ .detail1, .detail3, .detail4, .detail5, .detail6, .detail10, .detail11{
+  display: none !important;
+  }
+
+  section#about > .wrap{
+  width: 100%;
+  }
+  section#about .about_left{
+  margin-right: 4vw;
+  }
+  section#about .about_left article img{
+  width: 32vw;
+  }
+}
+@media screen and (max-width:800px){
+  .header .wrap a.logo{
+  }
+/*  about  */
+  section#about{
+  height: 118vh;
+  min-height: 118vh;
+  }
+  section#about .about{
+  flex-direction: column;
+  text-align: center;
+  margin-top: 56px;
+  }
+
+
+  section#about .about_left{  
+  margin-right: 0;
+  }
+  section#about .about_left article img{
+  width: 53.3vw;
+  }
+/*  skill  */
+  section#skill{
+    
+  min-height: 800px;
+  height: 111vh;
+  }
+  section#skill .wrap{
+    
+  }
+/*  portfolio  */
+  section#portfolio{
+  height: 97vh;
+  min-height: 826px;
+  }
+  section#skill .wrap .skill .skill_right{
+  flex-direction: column;
+  }
+  section#skill .wrap .skill .skill_right .boxA{
+  margin-right: 0;
+  margin-bottom: 30px;
+  }
+}
+@media screen and (max-width:580px){
+  
+  .wrap{    
+  padding: 0 30px !important;
+  min-height: 600px;
+  box-sizing: border-box;
+  }
+  .vh100{
+    height: 70vh;
+    box-sizing: border-box;
+    min-height: 600px;
+  }
+/*  헤더   */
+  .header{
+  margin: 0;
+  }
+  .header.blackBG{
+    background-color:black;
+    position: fixed;
+    z-index: 10;
+  }
+  .header .wrap{
+  margin: 0;
+  position: relative;
+  width: 100%;
+  min-height: initial;
+  }
+  .header .wrap a.logo{
+  width: 62px;
+  height: 62px;
+  background-repeat: no-repeat;
+  }
+  .ham{
+  display: flex;
+  }
+  .ham::after{
+    
+  }
+  .header .wrap ul{
+  background-color: black;
+  width: 100%;
+  height: 200px;
+  padding: 0;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 56px;
+  display: inline-block;
+  text-align: right;
+  padding-right: 15px;
+  width: 40%;
+  padding-left: 20px;
+  z-index: 1;
+  display: none;
+  }
+  .header .wrap ul.click{
+    display: inline-block !important;
+  }
+  
+  .header .wrap ul li{
+  padding: 0;
+  padding-top: 10px;
+  }
+  .header .wrap ul li a{
+  line-height: 2;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  display: block;
+  }
+/*  타이틀  */
+  div#title{
+  background-position: center;
+  }
+  div#title .wrap h2{
+  font-size: 17px;
+  line-height: 2;
+  }
+  div#title .wrap p{
+  font-size: 17px;
+  }
+  div#title .wrap .typing{
+    
+  margin-bottom: 10px;
+  }
+  div#title .wrap .wave{
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 10px auto auto auto;
+  row-gap: 10px;
+  }
+  .wave_effect1{
+    
+  grid-column: 2;
+  }
+  .wave_effect2{
+    
+  }
+  .wave_effect3{
+    
+  }
+  .wave_effect4{
+  grid-column: 1 / span 4;
+  }  
+  div#title .wrap p .textC{
+    display: block;
+  }
+/* about   */
+  section#about{
+  height: 60vh;
+  min-height: 880px;
+  }
+  section#about > .wrap{
+  width: 100%;
+  }
+  section#about .about{
+  margin-top: 0;
+  flex-direction: column;
+  }
+  section#about .wrap > h2{
+  margin-top: 0;
+  flex-direction: column;
+  font-size: 35px;
+  padding-bottom: 20px;
+  }
+  section#about .about_left{
+  margin-right: 0;
+  }
+  section#about .about_left article img{
+  width: 300px;
+  }
+  section#about .about_left p{
+    
+  font-size: 13px;
+  }
+  section#about .about_right{
+  text-align: center;
+  }
+  section#about .about_right h3{
+  font-size: 22px;
+  color: #656565;
+  }
+  section#about .about_right p{
+    
+  font-size: 13px;
+  }
+/* skill   */
+  section#skill{
+    height: 60vh;
+    min-height: 900px;
+  }
+  section#skill .wrap .skill{
+  flex-direction: column;
+  }
+  section#skill .wrap > h2{
+  font-size: 35px;
+  display: initial;
+  margin-bottom: 10px;
+  text-align: center;
+  }
+  section#skill .wrap .skill .skill_left{
+  width: 100%;
+  }
+  section#skill .wrap .skill .skill_left > h2{
+    display: none;
+  }
+  section#skill .wrap .skill .skill_left p{
+  margin-top: 15px;
+  font-size: 13px;
+  }
+  
+  section#skill .wrap .skill .skill_right{
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  }
+  
+  section#skill .wrap .skill .skill_right>div{
+  margin-right: 0 !important;
+  }
+  section#skill .wrap .skill .skill_right article{
+    
+  width: 260px;
+  height: 260px;
+  }
+  section#skill .wrap .skill .skill_right .boxA{
+  margin-bottom: 25px;
+  }
+  section#skill .wrap .skill h3{
+    
+  font-size: 22px;
+  color: #656565;
+  }
+  section#skill .wrap .skill .skill_right article img{
+  width: 50px;
+  }
+  
+  section#skill .wrap .skill .skill_right article > div p{  
+  font-size: 14px;
+  }
+  section#skill .wrap .skill .skill_right .boxA article > div p em{
+    
+  font-size: 19px;
+  }
+/*  portfolio  */
+   section#portfolio{
+  height: 1609px;
+  }
+  section#portfolio .wrap{
+  flex-direction: column;
+  height: initial;
+  padding-top: 50px;
+  }
+  section#portfolio .wrap .portfolio_top{
+    
+  flex-direction: column;
+  display: flex;
+  text-align: left;
+  margin-top: -5px;
+  padding-top: 62px;
+  justify-content: center;
+  }
+  section#portfolio .wrap h2{
+  transform: none;
+  font-size: 35px;
+  color: white;
+  text-transform: uppercase;
+  }
+  section#portfolio .wrap p{
+  color: white;
+  }
+  section#portfolio .wrap .portfolio_top p{
+    
+  text-align: right;
+  font-size: 15px;
+  position: static;
+  display: flex;
+  justify-content: end;
+  }
+  section#portfolio .wrap .portfolio_top h2{
+  text-align: center;
+  }
+  section#portfolio .wrap .detail{
+    align-items: center;
+    width: 100%;
+  }
+  section#portfolio .wrap .left{
+  padding-top: 30px;
+  text-align: right;
+  position: relative;
+  width: 283px;
+  }
+  section#portfolio .wrap .detail9{
+    
+  }
+  section#portfolio .wrap div .left div{
+  justify-content: end;
+  }
+  section#portfolio .wrap .detail9 .left div{
+justify-content:space-between;
+}
+section#portfolio .wrap .detail12 .left div{
+justify-content:space-between;
+}
+  section#portfolio .wrap div .left a{
+  text-align: center;
+  font-size: 12px;
+  line-height: 21px;
+  }
+}

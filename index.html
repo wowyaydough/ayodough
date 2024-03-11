@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://ayodough.mycafe24.com/">
+   <meta property="og:description" content="웹퍼블리셔 취업을 위한 개인 포트폴리오">
+   <meta property="og:keywords" content="개인포트폴리오 개인홈페이지">
+   <meta property="og:title" content="황도연 개인홈페이지">
+   <meta name="description" content="웹퍼블리셔 취업을 위한 개인 포트폴리오"> 
+   <meta name="keywords" content="황도연 개인포트폴리오 개인홈페이지">
+   <meta name="og:image" content="https://ayodough.mycafe24.com/img/logo.PNG">
+   <meta name="http-equiv" content="5;url=https://ayodough.mycafe24.com/">
+
+   <title>A-yo DaY!</title>
+   <link rel="stylesheet" href="css/reset.css">
+
+   <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+   <link rel="icon" href="img/logo.png" type="image/x-icon">
+
+    <!-- 웹폰트 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+
+   <link rel="stylesheet" href="css/common.css">
+   <link rel="stylesheet" href="css/font.css">
+   <link rel="stylesheet" href="css/header.css">
+   <link rel="stylesheet" href="css/title.css">
+   <link rel="stylesheet" href="css/about.css">
+   <link rel="stylesheet" href="css/portfolio.css">
+   <link rel="stylesheet" href="css/portfolio2.css">
+   <link rel="stylesheet" href="css/skill.css">
+   <link rel="stylesheet" href="css/contact.css">
+   <link rel="stylesheet" href="css/footer.css">
+   <link rel="stylesheet" href="css/responsive385.css">
+
+   <!-- jQuery 연결 -->
+   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+   <!-- slick -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script type="text/javascript">
+   $(document).ready(
+       function(){
+           $('.portfolio1').slick({
+               infinite: true,
+               slidesToShow: 1,
+               slidesToScroll: 1,
+               autoplay: true,
+               autoplaySpeed: 2000,
+               speed:2000,
+               dots:true,
+               arrows:true
+           });
+           $('.portfolio2').slick({
+               infinite: true,
+               slidesToShow: 1,
+               slidesToScroll: 1,
+               autoplay: true,
+               autoplaySpeed: 2000,
+               speed:2000,
+               dots:true,
+               arrows:true
+           });
+         }
+   );
+   </script>
+   <!-- // 헤더 메뉴  -->
+   <script>
+      $(document).ready(function(){
+
+      
+   // <!-- 반응형 -->
+         $(window).scroll(function(){
+	         if($(window).scrollTop()>90){
+                  $(".header").addClass("blackBG");
+            }
+            //스크롤 - 어바웃
+            if($(window).scrollTop()>120){
+               $(".animation_about").addClass("show");
+            }
+            // 스크롤 - 스킬
+            if($(window).scrollTop()>1200){
+               $(".animation_skill").addClass("show");
+            }
+            
+         });
+
+         // 햄버거 버튼
+         $(".ham").click(function(){
+            $(".header .wrap ul").toggleClass("click");
+            return false;
+         });
+      });
+   </script>
+
+   <!-- 타이틀 영상 배경
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/css/jquery.mb.YTPlayer.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/jquery.mb.YTPlayer.min.js"></script>
+</head>
+<style>
+   #background{
+      z-index: -1;
+   }
+</style>
+<script>
+   jQuery( function() { // $(document).ready(function(){});
+      jQuery( '#background' ).YTPlayer();
+   });
+</script> -->
+<body>
+   <!-- header -->
+   <div class="header">
+      <div class="wrap flex between">
+         <a href="" class="logo"><h1>A-yo DaY!</h1></a>
+         <ul class="flex">
+            <li><a href="#about">about</a></li>
+            <li><a href="#skill">skill</a></li>
+            <li><a href="#portfolio2">portfolio</a></li>
+         </ul>
+         <a href="" class="ham"> </a>
+      </div>
+   </div>
+   <main>
+   <!-- title -->
+   <div id="title" class="vh100 box">
+      <div class="wrap flex column">
+         <div class="typing">
+            <h2 class="typing_effect1">나</h2>
+            <h2 class="typing_effect2">답</h2>
+            <h2 class="typing_effect3">게,&nbsp;</h2>
+            <h2 class="typing_effect4">새</h2>
+            <h2 class="typing_effect5">롭<span class="block"></span></h2>
+            <h2 class="typing_effect6">게<span class="block"></span></h2>
+         </div>
+         <div class="wave flex">
+            <p> 오늘을 살자</p><br>
+            <div class="flex">
+               <p class="wave_effect4 textC1">웹</p>
+               <p class="wave_effect4 textC2">퍼</p>
+               <p class="wave_effect4 textC3">블</p>
+               <p class="wave_effect4 textC4">리</p>
+               <p class="wave_effect4 textC5">셔&nbsp;</p>
+               <p class="wave_effect4 textC6">황</p>
+               <p class="wave_effect4 textC7">도</p>
+               <p class="wave_effect4 textC8">연</p>
+               <p class="wave_effect4 textC9">입</p>
+               <p class="wave_effect4 textC10">니</p>
+               <p class="wave_effect4 textC11">다</p>
+            </div> 
+         </div>
+       </div>
+       <!-- 유튜브 영상 -->
+       <!-- <div id="background" class="player" data-property="{
+         videoURL: 'https://www.youtube.com/watch?v=6lKw-KZbM1Q',
+         mute: true,
+         showControls: false,
+         useOnMobile: true,
+         quality: 'highres',
+         containment: 'body',
+         loop: true,
+         autoPlay: true,
+         stopMovieOnBlur: false,
+         startAt: 0,
+         opacity: 1
+       }">
+       </div> -->
+  </div>
+
+   <!-- about -->
+   <section id="about" class="vh100">
+      <div class="wrap">
+         <h2 class="animation_about">
+            <div>
+               <ul>
+                  <li class="fade del1 h2">a</li>
+                  <li class="fade del2 h2">b</li>
+                  <li class="fade del3 h2">o</li>
+                  <li class="fade del4 h2">u</li>
+                  <li class="fade del5 h2">t</li>
+               </ul>
+            </div>
+         </h2>
+         <div class="about flex">
+            <div class="about_left">
+               <article>
+                  <h2 class="hide">개인사진</h2>
+                  <img src="img/title3.jpg" alt="개인사진" class="animation_about">
+                  
+               </article>
+            </div>
+            <div class="about_right animation_about animation2">
+               <p class="animation_about animation1 bigger">
+                  <ul class="flex">
+                     <li class="fade del11">배</li>
+                     <li class="fade del12">움</li>
+                     <li class="fade del13">에</li>
+                     <li class="fade del14">는&nbsp;</li>
+                     <li class="fade del15">끝</li>
+                     <li class="fade del16">이</li>
+                     <li class="fade del17">없</li>
+                     <li class="fade del18">다</li>
+                     <li class="fade del19">고&nbsp;</li>
+                     <li class="fade del20">생</li>
+                     <li class="fade del21">각</li>
+                     <li class="fade del22">합</li>
+                     <li class="fade del23">니</li>
+                     <li class="fade del24">다</li>
+                  </ul>
+                  <ul class="flex">
+                     <li class="fade del111">열</li>
+                     <li class="fade del112">정</li>
+                     <li class="fade del113">을&nbsp;</li>
+                     <li class="fade del114">가</li>
+                     <li class="fade del115">지</li>
+                     <li class="fade del116">고&nbsp;</li>
+                     <li class="fade del117">한</li>
+                     <li class="fade del118">걸</li>
+                     <li class="fade del119">음</li>
+                     <li class="fade del120">씩&nbsp;</li>
+                     <li class="fade del121">발</li>
+                     <li class="fade del122">전</li>
+                     <li class="fade del123">하</li>
+                     <li class="fade del124">겠</li>
+                     <li class="fade del125">습</li>
+                     <li class="fade del126">니</li>
+                     <li class="fade del127">다</li>
+                  </ul>                  
+                  <br>
+               <h3 class="textBold">Education</h3><br>
+               <p>2023.11.01~2024.02.20</p>
+               <p>국비지원 UI/UX 웹디자인/웹퍼블리셔 과정 수료</p><br><br>
+            </div>
+         </div>
+      </div>
+
+   </section>
+
+   <!-- skill -->
+   <section id="skill" class="vh100">
+      <div class="wrap">
+         <h2 class="animation_skill">skill</h2>
+         <div id="skill_icon">
+            <div class="boxA animation_skill animation1">
+            <article>
+               <h3>Skills</h3>
+               <div>
+                  <figure>
+                     <img src="img/skill/html.png" alt="html">
+                     <img src="img/skill/css.png" alt="css">
+                     <img src="img/skill/jq.png" alt="jQuery">
+                     <img src="img/skill/js.png" alt="javascript">
+                     <img src="img/skill/w2.png" alt="javascript">
+                     <img src="img/skill/w3.png" alt="javascript">
+                     <img src="img/skill/z.png" alt="javascript">
+                  </figure>
+               </div>
+            </article>
+            </div>
+            <div class="boxB animation_skill animation2">
+               <article>
+                  <h3>Tools</h3>
+                  <div>
+                     <figure>
+                        <img src="img/skill/ps.png" alt="photoshop">
+                        <img src="img/skill/ai.png" alt="illustrator">
+                        <img src="img/skill/f.png" alt="firefox">
+                        <img src="img/skill/gg.png" alt="firefox">
+                        <img src="img/skill/ov.png" alt="firefox">
+                        <img src="img/skill/ss.png" alt="firefox">
+                        <img src="img/skill/vv.png" alt="firefox">
+                     </figure>
+                  </div>
+               </article>
+            </div>
+         </div>
+         <div id="detail">
+            <em>Can do</em><br>
+            <p class="top">5개월간 습득한 스킬과 사용툴입니다</p>
+
+            <div>
+               <p class="SKd">
+                  - Emmet(젠코딩)<br>
+                  - 시멘틱 태그로 html 마크업<br>
+                  - css, css 애니메이션<br>
+                  - 웹표준,웹 접근성<br>
+               </p>
+               <p class="SKd">
+                  - 구글 웹폰트, 웹아이콘<br>
+                  - SASS<br>
+                  - 슬릭<br>
+                  - 반응형 웹사이트 구축
+               </p>
+               <p class="SKd">
+                  - 포토샵과 일러스트레이터를 이용한 이미지 편집<br>
+                  - 구글드라이브를 통한 협업<br>
+                  - 깃허브를 사용한 협업<br>
+               </p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- portfolio -->
+   <section id="portfolio" class="vh100 hide">
+      <div class="wrap">
+         <h2>portfolio</h2>
+            <ul class="portfolio1">
+               <li class="detail detail1">
+                     <figure>
+                        <a href="https://ayodough.mycafe24.com/portfolio/pf1-accuniq/" target="_blank"><img src="img/portfolio/accuniq.png" alt="accuniq"></a>
+                     </figure>
+                     <div>
+                        <h2>accuniq</h2>
+                        <p>사용 기술 : HTML, CSS, jQuery</p>
+                        <p>참여도 : 90%</p>
+                        <p>완성도 : 90%</p>
+                        <p>작업기간 : 2023.11.27~2023.12.21 </p>
+                        <p>국비지원 수업과정에서 작업한 최초 포트폴리오입니다
+                           HTML 구조 파악, display:flex에 대한 이해를 할 수 있게 되었으며
+                           CSS 기본 레이아웃이 적용되었습니다
+                           후반 작업으로 CSS기본 애니메이션을 추가하였고,
+                           햄버거 버튼에는 jQuery를 사용하였습니다.
+                           추후 애니메이션 추가 작업을 진행할 예정입니다
+                        </p>
+                     </div>
+               </li>
+               <li class="detail detail3">
+                     <figure>
+                        <a href="https://ayodough.mycafe24.com/portfolio/LionHeart/" target="_blank"><img src="img/portfolio/lionheart.png" alt="lionheart"></a>
+                     </figure>
+                     <div>
+                        <h2>라이온하트</h2>
+                        <p>사용기술 : HTML, CSS, jQuery</p>
+                        <p>참여도 : 100%</p>
+                        <p>완성도 : 100%</p>
+                        <p>작업기간 : 2023.11.13~2024.11.29</p>
+                        <p>
+                           동영상을 처음 삽입한 포트폴리오 입니다
+                           후반 작업으로 slick을 적용하여 이미지 슬라이드가 가능하게 하였습니다.
+                        </p>
+                     </div>
+               </li>
+               <li class="detail detail4 hide">
+
+                     <figure>
+                        <a href="https://ayodough.mycafe24.com/portfolio/Semine/" target="_blank"><img src="img/portfolio/samine.png" alt="samine"></a>
+                     </figure>
+                     <div>
+                        <h2>세미네</h2>
+                        <p>사용기술 : HTML, CSS</p>
+                        <p>참여도 : 100%</p>
+                        <p>완성도 : 70%</p>
+                        <p>작업기간 : 2024.12.05~2024.12.07</p>
+                        <p>다양하게 그리드를 적용시키는 방법에 대해 알게 되었스빈다.
+                           기존사이트에 적용되어있는 이미지 슬라이드 기능은 현재 미구현이나,
+                           추후 javascript로 적용 예정입니다.</p>
+                     </div>
+               </li>
+               <li class="detail detail5">
+                     <figure>
+                        <a href="https://ayodough.mycafe24.com/portfolio/Carrot/" target="_blank"><img src="img/portfolio/Carrot.png" alt="Carrot"></a>
+                     </figure>
+                     <div>
+                        <h2>캐롯손해보험</h2>
+                        <p>사용기술 : HTML, CSS, jQuery</p>
+                        <p>참여도 : 100%</p>
+                        <p>완성도 : 100%</p>
+                        <p>작업기간 : 2023.12.19~2024.02.20</p>
+                        <p>타이틀 화면에 전체 동영상을 삽입 후 헤드 작업에 시간이 오래 걸렸던 포트폴리오 입니다. 
+                           해당 포트폴리오를 작업하며 position:absolute에 대해 이해할 수 있었습니다.
+                           또한 마우스 hover시 이미지 확대 및 over-flow:hidden을 적용시키는 방법에 대해 이해할 수 있었습니다 
+                           제이쿼리를 사용하여 gnb메뉴 구현을 하였습니다.</p>
+                     </div>            
+               </li>
+               
+               <li class="detail detail6">               
+                     <figure>
+                        <a href="https://ayodough.mycafe24.com/portfolio/BaskinRobbins/" target="_blank"><img src="img/portfolio/BR.png" alt="baskinrobbins"></a>
+                     </figure>
+                     <div>
+                        <h2>배스킨라빈스</h2>
+                        <p>사용기술 : HTML, CSS</p>
+                        <p>참여도 : 100%</p>
+                        <p>작업기간 : 2023.12.28~2024.01.10</p>
+                     </div>
+               </li>
+ 
+            </ul>
+      </div>
+   </section>
+
+   <section id="portfolio2" class="vh100">
+      <div class="wrap">
+         <h2>portfolio</h2>
+            <ul class="portfolio2">
+               <li class="detail detail10">
+                  <figure>
+                     <a href="https://ayodough.mycafe24.com/portfolio/Asty/" target="_blank"><img src="img/portfolio/asty.png" alt="asty"></a>
+                  </figure>
+                  <div>
+                     <h2>아스티</h2>
+                     <p>사용기술 : HTML, CSS, jQuery</p>
+                     <p>참여도 : 100%</p>
+                     <p>작업기간 : 2024.01.04~2024.01.24</p>
+                     <p>가장 처음 이미지 클론을 한 포트폴리오 입니다. <br>
+                        jQuery를 사용하여 창문 이미지효과를 주었습니다.
+
+                     </p>
+                  </div>
+               </li>
+               <li class="detail detail11">                 
+                  <figure>
+                     <a href="https://ayodough.mycafe24.com/portfolio/ISTEC/" target="_blank"><img src="img/portfolio/ISTEC.png" alt="ISTEC"></a>
+                  </figure>
+                  <div>
+                     <h2>ISTEC</h2>
+                     <p>사용기술 : HTML, CSS, CSS 애니메이션</p>
+                     <p>참여도 : 100%</p>
+                     <p>완성도 : 70%</p>
+                     <p>작업기간 : 2023.12.18~2024.02.15</p>
+                     <p>가장 오래 작업한 포트폴리오 입니다. <br>
+                        3번째 페이지를 작업하면서 <br>
+                        CSS애니메이션과 hover기능에 대해 <br>
+                        이해할 수 있게 되었습니다<br>
+                        후반 애니메이션 작업을 진행할 예정입니다.
+                     </p>
+                  </div>              
+               </li>
+               <li class="detail detail7">                 
+                  <figure>
+                     <img src="img/portfolio/Tooniverse.PNG" alt="Tooniverse">
+                  </figure>   
+                  <div>
+                     <h2>투니버스</h2>
+                     <p>사용기술 : HTML, CSS</p>
+                     <p>참여도 : 100%</p>
+                     <p>완성도 : 95%</p>
+                     <p>작업기간 : 2023.01.12~2024.01.17</p>
+                     <div class="flex">
+                        <a href="https://ayodough.mycafe24.com/portfolio/Tooniverse/" target="_blank">바로가기</a>
+                        <a href="javascript:void(window.open('https://ayodough.mycafe24.com/portfolio/Tooniverse','Tooniverse','width=959px'))">959px</a> 
+                     </div>
+                  </div>    
+                 
+               </li>
+               <li class="detail detail8">
+                        <figure>
+                           <img src="img/portfolio/Etude.PNG" alt="Etude">
+                        </figure>
+                        <div>
+                           <h2>에뛰드</h2>
+                           <p>사용기술 : HTML, CSS, jQuery</p>
+                           <p>참여도 : 100%</p>
+                           <p>완성도 : 99%</p>
+                           <p>작업기간 : 2023.02.08~2024.02.15</p>
+                           <p>jQuery를 사용하여 모바일 햄버거<br>
+                              버튼 기능을 구현하였습니다.</p>
+                           <div class="flex">
+                              <a href="https://ayodough.mycafe24.com/portfolio/Etude/" target="_blank">바로가기</a>
+                              <a href="javascript:void(window.open('https://ayodough.mycafe24.com/portfolio/Etude/','Etude','width=770px'))">770px</a>
+                           </div>
+                        </div>
+                 
+               </li>
+               <li class="detail detail9 hide">
+                  <figure>
+                     <img src="img/portfolio/hbpaper_re.png" alt="hbpaper">
+                  </figure>
+                  <div>
+                     <h2>HB페이퍼</h2>
+                     <p>사용기술 : HTML, CSS</p>
+                     <p>참여도 : 60%</p>
+                     <p>작업기간 : 2023.12.29~2024.01.24</p>
+                     <div class="flex">
+                        <a href="https://ayodough.mycafe24.com/portfolio/pf3-hbpaper/" target="_blank">바로가기</a>
+                        <a href="javascript:void(window.open('https://ayodough.mycafe24.com/portfolio/pf3-hbpaper/','HBpaper','width=1520px'))">1520px</a>
+                        <a href="javascript:void(window.open('https://ayodough.mycafe24.com/portfolio/pf3-hbpaper/','HBpaper','width=1280px'))">1280px</a>
+                        <a href="javascript:void(window.open('https://ayodough.mycafe24.com/portfolio/pf3-hbpaper/','HBpaper','width=980px'))">980px</a>
+                     </div>  
+                  </div>
+                 
+               </li>        
+               <li class="detail detail12">
+                  <figure>
+                     <img src="img/portfolio/hitejinro.PNG" alt="hitejinro">
+                  </figure>
+                  <div>
+                  <h2>하이트진로</h2>
+                     <p>사용기술 : HTML, CSS, jQuery</p>
+                     <p>참여도 : 50%</p>
+                     <p>작업기간 : 2024.01.22~2024.02.22</p>
+                     <div class="flex">
+                        <a href="https://ayodough.mycafe24.com/portfolio/pf4/" target="_blank">바로가기</a>
+                        <a href="javascript:void(window.open('https://ayodough.mycafe24.com/portfolio/pf4/','HiteJinro','width=1440px'))">1440px</a>
+                        <a href="javascript:void(window.open('https://ayodough.mycafe24.com/portfolio/pf4/','HiteJinro','width=1200px'))">1200px</a>
+                        <a href="javascript:void(window.open('https://ayodough.mycafe24.com/portfolio/pf4/','HiteJinro','width=786px'))">786px</a>
+               </div>
+                  </div>
+                  
+               </li>
+            </ul>
+      </div>
+   </section>
+   <!-- Contact -->
+   <section id="contact">
+     <div class="wrap">
+      <h3 class="textBold">Contact</h3>
+         <div class="contact_left">
+            <figure>
+               <img src="img/contact.jpg" alt="여자 사진">
+            </figure>
+         </div>
+         <div class="contact_right">
+               <figure>
+                  <img src="img/qr.PNG" alt="카카오 오픈채팅 QR코드">
+               </figure>
+               <p>makemyownwaysecond@gmaill.com</p>
+               <p>카카오 오픈채팅<br> <a href="https://open.kakao.com/o/su8dZkeg" target="_blank">https://open.kakao.com/o/su8dZkeg</a></p>
+            </h3>
+         </div>
+      </div> 
+   </section>
+   </main>   
+
+   <!-- footer -->
+   <footer>
+      <p>Copyright © 2024 A-yo day!</p>
+      <p>위 사이트는 개인 포트폴리오 용도로 제작되었습니다.</p>
+   </footer>
+</body>
+</html>

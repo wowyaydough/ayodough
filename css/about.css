@@ -1,0 +1,282 @@
+section#about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section#about > .wrap{
+  width: 52%;
+}
+
+section .wrap>h2{
+  font-size: 60px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  text-align: center;
+  color: white;
+}
+
+section#about .about{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+section#about .about::before{ 
+  content:"";
+  display: block;
+  width: 23vw;
+  height: 15vw;
+  position: absolute;
+  background-color: #b0cce5;
+  left: -2%;
+  top: -8%;
+  animation-name: sliding_right_to_left;
+  animation-duration: 1s;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  opacity: 0;
+}
+
+.animation_about{
+  opacity: 0;
+}
+section .wrap .animation_about.show{
+  animation-name:sliding_right_to_left;
+  animation-duration:1s;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  text-align: center;
+  color: #171a45;
+}
+section .wrap .animation_about.show ul{
+  padding: 9px;
+}
+section .wrap .animation_about.show ul li{
+  font-size: 19pt;
+}
+.animation1{
+  animation-delay: 0.2s;
+}
+.animation2{
+  animation-delay: 0.4s;
+}
+.h2{
+  
+  font-size: 60px !important;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+@keyframes sliding_right_to_left{
+  0%{
+    opacity:1;
+  }
+  100%{
+    transform:translatex(200%);
+  }
+}
+section .wrap .animation_about.show div{
+  
+}
+section .wrap .animation_about.show div ul{
+  display: flex;
+  justify-content: center;
+}
+section#about .about_left{
+  margin-right: 164px;
+  position: relative;
+  z-index: 1;
+  width: 426px;
+}
+section#about .about_left article{
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  border: none;
+}
+
+section#about .about_left p{
+  color: white;
+  line-height: 1.5;
+  padding-top: 15px;
+  text-align: center;
+}
+section#about .about_left article img{
+  position: relative;
+  z-index: -1;
+  width: 500px;
+}
+@keyframes circle{
+  0%{
+  transform:rotateX(360deg)
+    opacity:1;
+  }
+  30%{
+    transform:rotateX(360deg)
+      opacity:1;
+  }
+  60%{
+    transform:rotateX(180deg)
+      opacity:1;
+  }
+  100%{
+    transform:rotateX(0deg)
+      opacity:1;
+  }
+  
+}
+section#about .about_right h3{
+  color: #171a45;
+  font-size: 38px;
+}
+section#about .about_right p{
+  color: #181f83;
+  line-height: 1.5;
+}
+section#about .about_right p.bigger{
+  font-size: 23px;
+  
+  padding-bottom: 13px;
+  margin-top: -41px;
+}
+section#about .about_right p.textBold{
+  font-size: 30px;
+}
+
+@keyframes sliding_right_to_left{
+  0%{
+    opacity:1;
+  }
+  100%{
+    transform:translatex(200%);
+  }
+}
+@keyframes fade{
+  100%{
+    opacity:1;
+  }
+}
+.fade{
+  animation-name: fade !important;
+  animation-duration:1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  opacity:0;
+  
+}
+
+.del1{
+  animation-delay: 3.5s;
+}
+.del2{
+  animation-delay: 3.7s;
+}
+.del3{
+  animation-delay: 3.9s;
+}
+.del4{
+  animation-delay: 4.1s;
+}
+.del5{
+  animation-delay: 4.3s;
+}  
+
+
+.del11{
+  animation-delay: 4.4s;
+}
+.del12{
+  animation-delay: 4.5s;
+}
+.del13{
+  animation-delay: 4.6s;
+}
+.del14{
+  animation-delay: 4.7s;
+}
+.del15{
+  animation-delay: 4.8s;
+}  
+.del16{
+  animation-delay: 4.9s;
+}
+.del17{
+  animation-delay: 5s;
+}
+.del18{
+  animation-delay: 5.1s;
+}
+.del19{
+  animation-delay: 5.2s;
+}
+.del20{
+  animation-delay: 5.3s;
+}  
+.del21{
+  animation-delay: 5.4s;
+}
+.del22{
+  animation-delay: 5.5s;
+}
+.del23{
+  animation-delay: 5.6s;
+}
+.del24{
+  animation-delay: 5.7s;
+}
+
+
+.del111{
+  animation-delay: 6.1s;
+}
+.del112{
+  animation-delay: 6.2s;
+}
+.del113{
+  animation-delay: 6.3s;
+}
+.del114{
+  animation-delay: 6.4s;
+}
+.del115{
+  animation-delay: 6.5s;
+}  
+.del116{
+  animation-delay: 6.6s;
+}
+.del117{
+  animation-delay: 6.7s;
+}
+.del118{
+  animation-delay: 6.8s;
+}
+.del119{
+  animation-delay: 6.9s;
+}
+.del120{
+  animation-delay: 7s;
+}  
+.del121{
+  animation-delay: 7.1s;
+}
+.del122{
+  animation-delay: 7.2s;
+}
+.del123{
+  animation-delay: 7.3s;
+}
+.del124{
+  animation-delay: 7.4s;
+}
+.del125{
+  animation-delay: 7.5s;
+}  
+.del126{
+  animation-delay: 7.6s;
+}
+.del127{
+  animation-delay: 7.7s;
+}

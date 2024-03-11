@@ -1,0 +1,138 @@
+section#portfolio{
+  background: linear-gradient(#79afe0, #5ca0de);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+section#portfolio .wrap{ 
+ 
+  max-width: 1400px;
+}
+section#portfolio .wrap .portfolio_top {
+   
+}
+section#portfolio .wrap .left .portfolio_top h2{
+
+}
+section#portfolio .wrap>h2{
+
+
+}
+section#portfolio .wrap ul{
+  
+}
+section#portfolio .wrap .portfolio1{
+  
+}
+
+section#portfolio .wrap .portfolio_top p{
+  
+}
+section#portfolio .wrap .portfolio_bottom{
+
+}
+section#portfolio .wrap .portfolio_bottom>div{
+ 
+}
+section#portfolio .wrap .detail{
+
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+section#portfolio .wrap .detail3{
+ 
+}
+section#portfolio .wrap .detail h2{
+  
+  color: #c0dfff;
+  padding-bottom: 14px;
+  font-size: 30px;
+  grid-column: 1 / span 2;
+  text-align: left;
+  text-transform: uppercase;
+}
+section#portfolio .wrap .detail figure {
+  
+  grid-column: 1;
+  grid-row: 2;
+  width: 1200px;
+}
+section#portfolio .wrap .detail div{
+  
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+}
+section#portfolio .wrap .detail p{
+  
+  text-align: left;
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  line-height: 2;
+}
+section#portfolio .wrap .detail figure img{
+ 
+  border-radius: 24px;
+}
+section#portfolio .wrap .detail4{
+ 
+}
+section#portfolio .wrap .detail9{
+ 
+}
+section#portfolio .wrap .detail1.hide{
+ 
+}
+section#portfolio .wrap .detail.hide{
+  
+}
+section#portfolio .wrap .detail.detailShow{
+ 
+}
+section#portfolio .wrap .list a{
+  
+}
+
+section#portfolio .wrap .left{
+  
+}
+
+section#portfolio .wrap>div>.left>h2{
+
+}
+
+
+section#portfolio .detail::before{
+ 
+}
+section#portfolio .detail:hover::before{
+  
+}
+
+
+section#portfolio .wrap div .left p{
+
+}
+section#portfolio .wrap div .left a{
+ 
+}
+section#portfolio .wrap div .left a:hover{
+ 
+}
+section#portfolio .wrap .right{
+  
+
+}
+  section#portfolio .wrap ul{
+ 
+  
+}
+
