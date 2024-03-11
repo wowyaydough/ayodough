@@ -31,7 +31,9 @@ section#contact p a{
 }
  section#contact figure{   
   padding-bottom: 3vh;
- }
+   display: flex;
+ justify-content: left;
+}
  section#contact figure img{ 
    width: 388px;
    margin-top: -26px;

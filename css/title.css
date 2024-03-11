@@ -111,7 +111,7 @@ div#title .wrap h2{
 }
 
 
-div#title .wrap p{
+div#title .wrap p.today{
   color: white;
   font-size: 49px;
   animation-duration: 1s;
@@ -120,7 +120,7 @@ div#title .wrap p{
   animation-timing-function: ease-in;
   opacity: 0;
   animation-name:wv;
-  line-height: 71px;
+  /*! line-height: 71px; */
   animation-delay: 4.9s;
 }
 .wave_effect1{
@@ -135,6 +135,15 @@ div#title .wrap p{
 }
 .wave_effect4{
   animation-name: fade !important;
+  color: white;
+  font-size: 49px;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  opacity: 0;
+  animation-name: wv;
+  line-height: 71px;
+  animation-delay: 4.9s;
 }
 @keyframes wv{
   0%{

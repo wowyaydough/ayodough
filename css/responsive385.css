@@ -70,9 +70,11 @@
   }
   section#skill .wrap #detail em{
     width:83vw;
+    font-size: 5vw;
   }
   section#skill .wrap #detail p.top{
     width:83vw;
+    font-size: 4.5vw;
   }
   section#skill .wrap #detail > div{
     
@@ -132,20 +134,19 @@
   #contact .wrap .contact_left{
     
   padding: 0;
-  padding-right: 3vw;
+  width: 60vw;
   }
   section#contact p{
     
   font-size: 2vw;
   }
 }
-@media screen and (max-width:800px){
+@media screen and (max-width:768px){
   .header .wrap a.logo{
   }
 /*  about  */
   section#about{
   height: 118vh;
-  min-height: 118vh;
   }
   section#about .about{
   flex-direction: column;
@@ -187,19 +188,28 @@
   margin-bottom: 30px;
   }
 /*  portfolio  */
+  
+  section#portfolio2{
+    height: 74vh;
+  }
   section#portfolio2 .wrap{
     
   width: 77vw;
   }
+  section#contact{
+    
+  height: 51vh;
+  width: 100%;
+  }
   section#contact p{
     
+  font-size: 4vw;
   }
 }
-@media screen and (max-width:580px){
-  
+@media screen and (max-width:384px){
+
   .wrap{    
   padding: 0 30px !important;
-  min-height: 600px;
   box-sizing: border-box;
   }
   .vh100{
@@ -267,23 +277,54 @@
 /*  타이틀  */
   div#title{
   background-position: center;
+  animation: none;
+  height: 58vh;
+  width: 100vw;
+  background-position-y: 56px;
   }
   div#title .wrap h2{
-  font-size: 17px;
+  font-size: 6vw;
   line-height: 2;
+  color: navy;
+  animation-delay: 0s;
   }
+  .typing_effect2{
+ animation-delay:0.5s !important;; 
+}
+.typing_effect3{
+ animation-delay:1s !important;;
+}
+.typing_effect4{
+ animation-delay:1.5s !important;; 
+}
+.typing_effect5{
+ animation-delay:2s !important;; 
+}
+.typing_effect6{
+ animation-delay:2.5s !important;; 
+}
+    
   div#title .wrap p{
-  font-size: 17px;
+  font-size: 6vw;
+  color: navy;
+  padding-bottom: 4vw;
   }
   div#title .wrap .typing{
     
-  margin-bottom: 10px;
+  margin-bottom: 1vw;
+  }
+  div#title .wrap p.today{
+    
+  color: navy;
+  font-size: 6vw;
+  animation-delay: 2.7s;
   }
   div#title .wrap .wave{
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: 10px auto auto auto;
-  row-gap: 10px;
+  padding: 0;
+  }
+  div#title .wrap .wave div{
+    
+  padding-bottom: 34vw;
   }
   .wave_effect1{
     
@@ -303,9 +344,9 @@
   }
 /* about   */
   section#about{
-  height: 60vh;
-  min-height: 880px;
+  height: 80vh;
   }
+  
   section#about > .wrap{
   width: 100%;
   }
@@ -329,8 +370,17 @@
     
   font-size: 13px;
   }
+  section .wrap .animation_about.show>div>ul>li{
+    
+  font-size: 10vw !important;
+  }
+
   section#about .about_right{
   text-align: center;
+  }
+  section#about .about_right>ul>li{
+    
+  font-size: 5vw;
   }
   section#about .about_right h3{
   font-size: 22px;
@@ -345,14 +395,45 @@
     height: 60vh;
     min-height: 900px;
   }
+  section#skill .wrap{
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
   section#skill .wrap .skill{
   flex-direction: column;
   }
   section#skill .wrap > h2{
-  font-size: 35px;
-  display: initial;
-  margin-bottom: 10px;
-  text-align: center;
+    
+  width: 100%;
+  gap: 0;
+  flex-wrap: wrap;
+  padding: 0;
+  padding-bottom: 3vh;
+  font-size: 10vw;
+  }
+  section#skill .wrap #skill_icon > div{
+    
+  width: 100%;
+  }
+  section#skill .wrap #skill_icon{
+    padding:0;
+    flex-direction: column;
+    width: 100%;
+  }
+  section#skill .wrap .boxA article{
+    padding:0;
+  }
+  section#skill .wrap .boxB article{
+    padding:0;
+  }
+  section#skill .wrap #detail > div{
+    
+  width: 100%;
+  gap: 0;
+  flex-wrap: wrap;
   }
   section#skill .wrap .skill .skill_left{
   width: 100%;
@@ -402,6 +483,12 @@
    section#portfolio{
   height: 1609px;
   }
+    section#portfolio2 .wrap > h2{
+    
+  font-size: 10vw;
+  padding: 0;
+  padding-bottom: 4vw;
+  }
   section#portfolio .wrap{
   flex-direction: column;
   height: initial;
@@ -433,9 +520,28 @@
   display: flex;
   justify-content: end;
   }
+  section#skill .wrap #skill_icon .boxA{
+    
+  justify-content: left;
+  }
+  section#skill .wrap h3{
+    
+  padding-bottom: 1vh;
+  font-size: 5vw;
+  }
+  section#skill .wrap article>div{
+    
+  padding-bottom: 2vh;
+  }
+  section#skill .wrap figure img{
+    
+  width: 11vw;
+  }
+  
   section#portfolio .wrap .portfolio_top h2{
   text-align: center;
   }
+  
   section#portfolio .wrap .detail{
     align-items: center;
     width: 100%;
@@ -462,5 +568,62 @@ justify-content:space-between;
   text-align: center;
   font-size: 12px;
   line-height: 21px;
+  }
+  
+  section#portfolio2 .wrap .detail figure{
+  
+  width: 70vw;
+}
+section#portfolio2 .wrap .detail{
+  
+  display: flex;
+  flex-direction: column;
+}
+section#portfolio2 .wrap .detail div:nth-child(2){
+  
+  padding: 0;
+}
+section#portfolio2 .wrap .detail h2{
+  font-size: 5vw;
+  padding: 3vw 0;
+}
+  section#contact .wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*! max-width: 100vw; */
+  }
+  section#contact figure{
+    width: 100%;
+  }
+  #contact .wrap .contact_left{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+  #contact .wrap .contact_left figure img{
+    display: none;
+  }
+section#contact h3{
+  
+  padding: 0;
+  font-size: 10vw;
+  padding-bottom: 13vw;
+}
+  section#contact figure img{
+    width:100%; 
+    justify-content: center;
+    display: flex;
+  }
+  #contact .wrap .contact_right figure img{
+    padding:0;
+    padding-top: 6vw;
+    width: 100%;
+  }
+  #contact .wrap .contact_right{
+    width:100%;
+  }
+  footer p{
+    font-size: 3vw;
   }
 }

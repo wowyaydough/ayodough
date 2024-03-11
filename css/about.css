@@ -54,6 +54,7 @@ section .wrap .animation_about.show{
 }
 section .wrap .animation_about.show ul{
   padding: 9px;
+  justify-content: center;
 }
 section .wrap .animation_about.show ul li{
   font-size: 19pt;
@@ -135,6 +136,7 @@ section#about .about_right h3{
 section#about .about_right p{
   color: #181f83;
   line-height: 1.5;
+  font-size: 1vw;
 }
 section#about .about_right p.bigger{
   font-size: 23px;

@@ -78,7 +78,7 @@ section#portfolio2 .wrap .detail figure {
   grid-column: 1;
   grid-row: 1 / span 3;
   padding-right: 0px;
-  width: 1000px;
+  width: 80vw;
 }
 section#portfolio2 .wrap .detail div:nth-child(1){
   
