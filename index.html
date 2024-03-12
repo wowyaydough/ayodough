@@ -42,43 +42,42 @@
 
    <!-- // 헤더 메뉴  -->
    <script>
-      $(document).ready(function(){
+   $(document).ready(function(){
 
-      
-   // <!-- 반응형 -->
-         $(window).scroll(function(){
-	       
-            //스크롤 - 어바웃
-            if($(window).scrollTop()>630){
-               $(".animation_about").addClass("show");
-               $(".header .wrap ul li a").removeClass("currentT");
-               $(".header .wrap ul li:nth-child(1) a").addClass("currentT");
-               
-            }
-            // 스크롤 - 스킬
-            if($(window).scrollTop()>1630){
-               $(".animation_skill").addClass("show");
-               $(".header .wrap ul li a").removeClass("currentT");
-               $(".header .wrap ul li:nth-child(2) a").addClass("currentT");
-            }
+   
+// <!-- 반응형 -->
+      $(window).scroll(function(){
+         console.log($(window).scrollTop());
+         //스크롤 - 어바웃
+         if($(window).scrollTop()>630){
+            $(".animation_about").addClass("show");
+            $(".header .wrap ul li a").removeClass("currentT");
+            $(".header .wrap ul li:nth-child(1) a").addClass("currentT");
+         }
+         // 스크롤 - 스킬
+         if($(window).scrollTop()>1630){
+            $(".animation_skill").addClass("show");
+            $(".header .wrap ul li a").removeClass("currentT");
+            $(".header .wrap ul li:nth-child(2) a").addClass("currentT");
+         }
 
-            if($(window).scrollTop()>2500){
-               $(".header .wrap ul li a").removeClass("currentT");
-               $(".header .wrap ul li:nth-child(3) a").addClass("currentT");
-            }
-            
-            if($(window).scrollTop()>3500){
-               $(".header .wrap ul li a").removeClass("currentT");
-               $(".header .wrap ul li:nth-child(4) a").addClass("currentT");
-            }
-         });
-
-         // 햄버거 버튼
-         $(".ham").click(function(){
-            $(".header .wrap ul").toggleClass("click");
-            return false;
-         });
+         if($(window).scrollTop()>2500){
+            $(".header .wrap ul li a").removeClass("currentT");
+            $(".header .wrap ul li:nth-child(3) a").addClass("currentT");
+         }
+         
+         if($(window).scrollTop()>3500){
+            $(".header .wrap ul li a").removeClass("currentT");
+            $(".header .wrap ul li:nth-child(4) a").addClass("currentT");
+         }
       });
+
+      // 햄버거 버튼
+      $(".ham").click(function(){
+         $(".header .wrap ul").toggleClass("click");
+         return false;
+      });
+   });
    </script>
 
 
