@@ -71,7 +71,9 @@
             $(".header .wrap ul li a").removeClass("currentT");
             $(".header .wrap ul li:nth-child(4) a").addClass("currentT");
          }
-    })}else{
+    })}
+    
+    if($(window).width()<767){
          if($(window).scrollTop()>250){
             $(".animation_about").addClass("show");
          }
