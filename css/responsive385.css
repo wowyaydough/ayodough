@@ -90,7 +90,7 @@
   }
   section#skill .wrap #detail em{
     width:83vw;
-    font-size: 3vw;
+    font-size: 4vw;
   }
   section#skill .wrap #detail p.top{
     width:83vw;
@@ -418,6 +418,10 @@ height: 90vh;
   color: navy;
   padding-bottom: 4vw;
   }
+  .wave_effect4{
+    line-height: 1;
+    padding-top: 11px;
+  }
   div#title .wrap .typing{
     
   margin-bottom: 1vw;
@@ -497,7 +501,7 @@ height: 90vh;
   }
   section#about .about_right h3{
   font-size: 22px;
-  color: #656565;
+  color: powderblue;
   }
   section#about .about_right p{
     
@@ -803,5 +807,8 @@ section#contact h3{
   .portfolio .wrap .detail h2{
     font-size: 5vw;
     color: white;
+  }
+  section#skill .wrap #detail p.top{
+    font-size: 3.5vw;
   }
 }
