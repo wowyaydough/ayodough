@@ -49,6 +49,10 @@ div#title .wrap p {
 div#title .wrap .typing{
   display: flex;
 }
+.color_navy{
+  color:navy !important;
+  background-color: rgba(255,255,255,0.5);
+}
 div#title .wrap .wave{
   padding-bottom: 218px;
   flex-direction: column;

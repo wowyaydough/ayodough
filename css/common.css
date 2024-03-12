@@ -86,8 +86,8 @@ body{
 
 /* 라인 */
 .line{
-  border-left: 1px solid #ccc;
-  height: 25px;
+  border-left: 1px solid #bababa;
+  height: 12px;
   display: inline-block;
   margin: 0 20px;
 }

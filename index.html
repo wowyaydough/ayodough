@@ -39,88 +39,7 @@
    <!-- jQuery 연결 -->
    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 
-   <!-- slick -->
-   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-   <script type="text/javascript">
-   $(document).ready(
-       function(){
-           $('.portfolio1').slick({
-               infinite: true,
-               slidesToShow: 1,
-               slidesToScroll: 1,
-               autoplay: true,
-               autoplaySpeed: 2000,
-               speed:2000,
-               dots:true,
-               arrows:true,
-               responsive: [
-           {
-            breakpoint: 769,
-                    settings: {
-                        infinite: true,
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        autoplay: true,
-                        autoplaySpeed: 1000,
-                        speed:1000,
-                        dots:true,
-                        arrows:false
-           }},
-           {
-            breakpoint: 384,
-                    settings: {
-                        infinite: true,
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        autoplay: true,
-                        autoplaySpeed: 1000,
-                        speed:1000,
-                        dots:true,
-                        arrows:false
-                     }}
-                  ]
-         });
 
-           $('.portfolio2').slick({
-               infinite: true,
-               slidesToShow: 1,
-               slidesToScroll: 1,
-               autoplay: true,
-               autoplaySpeed: 2000,
-               speed:2000,
-               dots:true,
-               arrows:true,
-               responsive: [
-           {
-            breakpoint: 769,
-                    settings: {
-                        infinite: true,
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        autoplay: true,
-                        autoplaySpeed: 1000,
-                        speed:1000,
-                        dots:true,
-                        arrows:false,
-                    }},
-                    {
-            breakpoint: 384,
-                    settings: {
-                        infinite: true,
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        autoplay: true,
-                        autoplaySpeed: 1000,
-                        speed:1000,
-                        dots:true,
-                        arrows:false
-
-           }}]
-         });
-      });
-   </script>
    <!-- // 헤더 메뉴  -->
    <script>
       $(document).ready(function(){
@@ -176,36 +95,20 @@
          </div>
          <p class="today"> 오늘을 살자</p><br>
          <div class="flex">
-               <p class="wave_effect4 textC1">웹</p>
-               <p class="wave_effect4 textC2">퍼</p>
-               <p class="wave_effect4 textC3">블</p>
-               <p class="wave_effect4 textC4">리</p>
-               <p class="wave_effect4 textC5">셔&nbsp;</p>
-               <p class="wave_effect4 textC6">황</p>
-               <p class="wave_effect4 textC7">도</p>
-               <p class="wave_effect4 textC8">연</p>
+               <p class="wave_effect4 textC1 color_navy">웹</p>
+               <p class="wave_effect4 textC2 color_navy">퍼</p>
+               <p class="wave_effect4 textC3 color_navy">블</p>
+               <p class="wave_effect4 textC4 color_navy">리</p>
+               <p class="wave_effect4 textC5 color_navy">셔&nbsp;</p>
+               <p class="wave_effect4 textC6 color_navy">황</p>
+               <p class="wave_effect4 textC7 color_navy">도</p>
+               <p class="wave_effect4 textC8 color_navy">연</p>
                <p class="wave_effect4 textC9">입</p>
                <p class="wave_effect4 textC10">니</p>
                <p class="wave_effect4 textC11">다</p>
          </div>
       </div>
    </div>
-       <!-- 유튜브 영상 -->
-         <!-- <div id="background" class="player" data-property="{
-         videoURL: 'https://www.youtube.com/watch?v=6lKw-KZbM1Q',
-         mute: true,
-         showControls: false,
-         useOnMobile: true,
-         quality: 'highres',
-         containment: 'body',
-         loop: true,
-         autoPlay: true,
-         stopMovieOnBlur: false,
-         startAt: 0,
-         opacity: 1
-       }">
-       </div>  -->
-  </div>
 
    <!-- about -->
    <section id="about" class="vh100">
@@ -279,7 +182,7 @@
    <!-- skill -->
    <section id="skill" class="vh100">
       <div class="wrap">
-         <h2 class="animation_skill">skill</h2>
+         <h2 class="animation_skill h2">skill</h2>
          <div id="skill_icon">
             <div class="boxA animation_skill animation1">
             <article>
@@ -342,97 +245,22 @@
    </section>
 
    <!-- portfolio -->
-   <section id="portfolio" class="vh100 hide">
+   <section id="portfolio2" class="vh100 portfolio">
       <div class="wrap">
-         <h2>portfolio</h2>
-            <ul class="portfolio1">
-               <li class="detail detail1">
-                     <figure>
-                        <a href="https://ayodough.mycafe24.com/portfolio/pf1-accuniq/" target="_blank"><img src="img/portfolio/accuniq.png" alt="accuniq"></a>
-                     </figure>
-                     <div>
-                        <h2>accuniq</h2>
-                        <p>사용 기술 : HTML, CSS, jQuery</p>
-                        <p>참여도 : 90%</p>
-                        <p>완성도 : 90%</p>
-                        <p>작업기간 : 2023.11.27~2023.12.21 </p>
-                        <p>국비지원 수업과정에서 작업한 최초 포트폴리오입니다
-                           HTML 구조 파악, display:flex에 대한 이해를 할 수 있게 되었으며
-                           CSS 기본 레이아웃이 적용되었습니다
-                           후반 작업으로 CSS기본 애니메이션을 추가하였고,
-                           햄버거 버튼에는 jQuery를 사용하였습니다.
-                           추후 애니메이션 추가 작업을 진행할 예정입니다
-                        </p>
-                     </div>
-               </li>
-               <li class="detail detail3">
-                     <figure>
-                        <a href="https://ayodough.mycafe24.com/portfolio/LionHeart/" target="_blank"><img src="img/portfolio/lionheart.png" alt="lionheart"></a>
-                     </figure>
-                     <div>
-                        <h2>라이온하트</h2>
-                        <p>사용기술 : HTML, CSS, jQuery</p>
-                        <p>참여도 : 100%</p>
-                        <p>완성도 : 100%</p>
-                        <p>작업기간 : 2023.11.13~2024.11.29</p>
-                        <p>
-                           동영상을 처음 삽입한 포트폴리오 입니다
-                           후반 작업으로 slick을 적용하여 이미지 슬라이드가 가능하게 하였습니다.
-                        </p>
-                     </div>
-               </li>
-               <li class="detail detail4 hide">
-
-                     <figure>
-                        <a href="https://ayodough.mycafe24.com/portfolio/Semine/" target="_blank"><img src="img/portfolio/samine.png" alt="samine"></a>
-                     </figure>
-                     <div>
-                        <h2>세미네</h2>
-                        <p>사용기술 : HTML, CSS</p>
-                        <p>참여도 : 100%</p>
-                        <p>완성도 : 70%</p>
-                        <p>작업기간 : 2024.12.05~2024.12.07</p>
-                        <p>다양하게 그리드를 적용시키는 방법에 대해 알게 되었스빈다.
-                           기존사이트에 적용되어있는 이미지 슬라이드 기능은 현재 미구현이나,
-                           추후 javascript로 적용 예정입니다.</p>
-                     </div>
-               </li>
-               <li class="detail detail5">
-                     <figure>
-                        <a href="https://ayodough.mycafe24.com/portfolio/Carrot/" target="_blank"><img src="img/portfolio/Carrot.png" alt="Carrot"></a>
-                     </figure>
-                     <div>
-                        <h2>캐롯손해보험</h2>
-                        <p>사용기술 : HTML, CSS, jQuery</p>
-                        <p>참여도 : 100%</p>
-                        <p>완성도 : 100%</p>
-                        <p>작업기간 : 2023.12.19~2024.02.20</p>
-                        <p>타이틀 화면에 전체 동영상을 삽입 후 헤드 작업에 시간이 오래 걸렸던 포트폴리오 입니다. 
-                           해당 포트폴리오를 작업하며 position:absolute에 대해 이해할 수 있었습니다.
-                           또한 마우스 hover시 이미지 확대 및 over-flow:hidden을 적용시키는 방법에 대해 이해할 수 있었습니다 
-                           제이쿼리를 사용하여 gnb메뉴 구현을 하였습니다.</p>
-                     </div>            
-               </li>
-               
-               <li class="detail detail6">               
-                     <figure>
-                        <a href="https://ayodough.mycafe24.com/portfolio/BaskinRobbins/" target="_blank"><img src="img/portfolio/BR.png" alt="baskinrobbins"></a>
-                     </figure>
-                     <div>
-                        <h2>배스킨라빈스</h2>
-                        <p>사용기술 : HTML, CSS</p>
-                        <p>참여도 : 100%</p>
-                        <p>작업기간 : 2023.12.28~2024.01.10</p>
-                     </div>
-               </li>
- 
-            </ul>
-      </div>
-   </section>
-
-   <section id="portfolio2" class="vh100">
-      <div class="wrap">
-         <h2>portfolio</h2>
+         <h2 class="h2">portfolio</h2>
+         <ul class="flex portfolio_list">
+            <li><a href="#portfolio2" class="current">Asty</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio3">ISTEC</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio4">Tooniverse</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio5">에뛰드</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio6">HBPaper</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio7">하이트진로</a></li>
+         </ul>
             <ul class="portfolio2">
                <li class="detail detail10">
                   <figure>
@@ -440,6 +268,7 @@
                   </figure>
                   <div>
                      <h2>아스티</h2>
+                     
                      <p>사용기술 : HTML, CSS, jQuery</p>
                      <p>참여도 : 100%</p>
                      <p>작업기간 : 2024.01.04~2024.01.24</p>
@@ -449,6 +278,27 @@
                      </p>
                   </div>
                </li>
+            </ul>
+      </div>
+   </section>
+
+   <section id="portfolio3" class="vh100 portfolio">
+      <div class="wrap">
+         <h2 class="hide">portfolio</h2>
+         <ul class="flex portfolio_list">
+            <li><a href="#portfolio2">Asty</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio3" class="current">ISTEC</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio4">Tooniverse</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio5">에뛰드</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio6">HBPaper</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio7">하이트진로</a></li>
+         </ul>
+            <ul class="portfolio2">
                <li class="detail detail11">                 
                   <figure>
                      <a href="https://ayodough.mycafe24.com/portfolio/ISTEC/" target="_blank"><img src="img/portfolio/ISTEC.png" alt="ISTEC"></a>
@@ -467,6 +317,27 @@
                      </p>
                   </div>              
                </li>
+            </ul>
+      </div>
+   </section>
+
+   <section id="portfolio4" class="vh100 portfolio">
+      <div class="wrap">
+         <h2 class="hide">portfolio</h2>
+         <ul class="flex portfolio_list">
+            <li><a href="#portfolio2">Asty</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio3">ISTEC</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio4" class="current">Tooniverse</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio5">에뛰드</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio6">HBPaper</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio7">하이트진로</a></li>
+         </ul>
+            <ul class="portfolio2">
                <li class="detail detail7">                 
                   <figure>
                      <img src="img/portfolio/Tooniverse.PNG" alt="Tooniverse">
@@ -484,28 +355,70 @@
                   </div>    
                  
                </li>
+            </ul>
+      </div>
+   </section>
+
+   <section id="portfolio5" class="vh100 portfolio">
+      <div class="wrap">
+         <h2 class="hide">portfolio</h2>
+         <ul class="flex portfolio_list">
+            <li><a href="#portfolio2">Asty</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio3">ISTEC</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio4">Tooniverse</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio5" class="current">에뛰드</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio6">HBPaper</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio7">하이트진로</a></li>
+         </ul>
+            <ul class="portfolio2">
                <li class="detail detail8">
-                        <figure>
-                           <img src="img/portfolio/Etude.PNG" alt="Etude">
-                        </figure>
-                        <div>
-                           <h2>에뛰드</h2>
-                           <p>사용기술 : HTML, CSS, jQuery</p>
-                           <p>참여도 : 100%</p>
-                           <p>완성도 : 99%</p>
-                           <p>작업기간 : 2023.02.08~2024.02.15</p>
-                           <p>jQuery를 사용하여 모바일 햄버거<br>
-                              버튼 기능을 구현하였습니다.</p>
-                           <div class="flex">
-                              <a href="https://ayodough.mycafe24.com/portfolio/Etude/" target="_blank">바로가기</a>
-                              <a href="javascript:void(window.open('https://ayodough.mycafe24.com/portfolio/Etude/','Etude','width=770px'))">770px</a>
-                           </div>
-                        </div>
-                 
-               </li>
-               <li class="detail detail9 hide">
                   <figure>
-                     <img src="img/portfolio/hbpaper_re.png" alt="hbpaper">
+                     <img src="img/portfolio/Etude.PNG" alt="Etude">
+                  </figure>
+                  <div>
+                     <h2>에뛰드</h2>
+                     <p>사용기술 : HTML, CSS, jQuery</p>
+                     <p>참여도 : 100%</p>
+                     <p>완성도 : 99%</p>
+                     <p>작업기간 : 2023.02.08~2024.02.15</p>
+                     <p>jQuery를 사용하여 모바일 햄버거<br>
+                        버튼 기능을 구현하였습니다.</p>
+                     <div class="flex">
+                        <a href="https://ayodough.mycafe24.com/portfolio/Etude/" target="_blank">바로가기</a>
+                        <a href="javascript:void(window.open('https://ayodough.mycafe24.com/portfolio/Etude/','Etude','width=770px'))">770px</a>
+                     </div>
+                  </div>
+           
+         </li>
+            </ul>
+      </div>
+   </section>
+
+   <section id="portfolio6" class="vh100 portfolio">
+      <div class="wrap">
+         <h2 class="hide">portfolio</h2>
+         <ul class="flex portfolio_list">
+            <li><a href="#portfolio2">Asty</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio3">ISTEC</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio4">Tooniverse</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio5">에뛰드</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio6" class="current">HBPaper</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio7">하이트진로</a></li>
+         </ul>
+            <ul class="portfolio2">
+               <li class="detail detail9">
+                  <figure>
+                     <img src="img/portfolio/HBpaper.png" alt="hbpaper">
                   </figure>
                   <div>
                      <h2>HB페이퍼</h2>
@@ -518,9 +431,29 @@
                         <a href="javascript:void(window.open('https://ayodough.mycafe24.com/portfolio/pf3-hbpaper/','HBpaper','width=1280px'))">1280px</a>
                         <a href="javascript:void(window.open('https://ayodough.mycafe24.com/portfolio/pf3-hbpaper/','HBpaper','width=980px'))">980px</a>
                      </div>  
-                  </div>
-                 
+                  </div> 
                </li>        
+            </ul>
+      </div>
+   </section>
+
+   <section id="portfolio7" class="vh100 portfolio">
+      <div class="wrap">
+         <h2 class="hide">portfolio</h2>
+         <ul class="flex portfolio_list">
+            <li><a href="#portfolio2">Asty</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio3">ISTEC</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio4">Tooniverse</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio5">에뛰드</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio6">HBPaper</a></li>
+            <span class="line"></span>
+            <li><a href="#portfolio7" class="current">하이트진로</a></li>
+         </ul>
+            <ul class="portfolio2">
                <li class="detail detail12">
                   <figure>
                      <img src="img/portfolio/hitejinro.PNG" alt="hitejinro">

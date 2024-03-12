@@ -6,8 +6,10 @@ section#skill .wrap{
 }
 
 section#skill .wrap>h2{
-  padding-left: 0;
+  
+  padding-top: 128px;
   color: white;
+  padding-bottom: 50px;
 }
 section#skill .wrap #skill_icon{
   
