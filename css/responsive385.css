@@ -304,6 +304,7 @@ height: 90vh;
   section#contact p{
     font-size: 3.5vw;
     text-align: center;
+    line-height: 2;
   }
   section#contact h3{
     font-size: 5vw;
@@ -765,7 +766,7 @@ section#portfolio2 .wrap .detail h2{
   }
   
   section#contact{
-    height: 42vh !important;
+    height: 55vh !important;
   }
   
    section#contact .wrap{
@@ -773,6 +774,7 @@ section#portfolio2 .wrap .detail h2{
     flex-direction: column;
     justify-content: center;
     /*! max-width: 100vw; */
+    padding-top: 40px !important;
   }
   section#contact figure{
     width: 100%;

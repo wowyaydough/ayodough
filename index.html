@@ -50,13 +50,13 @@
          $(window).scroll(function(){
          console.log($(window).scrollTop());
          //스크롤 - 어바웃
-         if($(window).scrollTop()>630){
+         if($(window).scrollTop()>530){
             $(".animation_about").addClass("show");
             $(".header .wrap ul li a").removeClass("currentT");
             $(".header .wrap ul li:nth-child(1) a").addClass("currentT");
          }
          // 스크롤 - 스킬
-         if($(window).scrollTop()>1630){
+         if($(window).scrollTop()>1430){
             $(".animation_skill").addClass("show");
             $(".header .wrap ul li a").removeClass("currentT");
             $(".header .wrap ul li:nth-child(2) a").addClass("currentT");
@@ -71,10 +71,7 @@
             $(".header .wrap ul li a").removeClass("currentT");
             $(".header .wrap ul li:nth-child(4) a").addClass("currentT");
          }
-      });
-
-      }
-      else{
+    })}else{
          if($(window).scrollTop()>250){
             $(".animation_about").addClass("show");
          }
@@ -82,6 +79,7 @@
             $(".animation_skill").addClass("show");
          }
       }
+
       // 햄버거 버튼
       $(".ham").click(function(){
          $(".header .wrap ul").toggleClass("click");
