@@ -56,3 +56,5 @@ section#contact p a{
    display: flex;
    flex-direction: column;
  }
+#contact .wrap .info{
+  }
