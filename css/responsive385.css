@@ -659,9 +659,7 @@ height: 90vh;
 /*  portfolio  */
    
   #hi{
- display: flex;
-    flex-direction: column;
-    justify-content: center;
+ display: none;
   }
   .portfolio{
     height: 30vh !important;
@@ -673,7 +671,20 @@ height: 90vh;
   }
   #portfolio2
 {
-  height: 65vh !important;
+  /*! height: 65vh !important; */
+  grid-column: 1;
+  }
+  #portfolio3{
+  grid-column: 2;
+  }
+    #portfolio4{
+  grid-column: 3;
+  }
+    #portfolio5{
+  grid-column: 4;
+  }
+    #portfolio7{
+  grid-column: 5;
   }
   section#portfolio2 .wrap{
     padding-top: 0px !important;
@@ -813,4 +824,57 @@ section#contact h3{
   section#skill .wrap #detail p.top{
     font-size: 3.5vw;
   }
+  #mportfolio{
+    display: block !important;
+    background-color: white;
+  }
+  #mportfolio .wrap h2{
+    font-size: 8vw;
+    color: navy;
+    padding-top: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  #mportfolio .wrap ul{
+}
+
+#mportfolio .wrap ul li{
+  padding-bottom: 45px;
+}
+
+#mportfolio .wrap ul li figure{
+}
+
+#mportfolio .wrap ul li figure a{
+}
+
+#mportfolio .wrap ul li div:nth-child(2){
+padding-bottom: 10px;
+text-align: right;
+  }
+
+#mportfolio .wrap ul li div h3{
+  line-height: 1.5;
+  color: #5f53f2;
+}
+
+#mportfolio .wrap ul li div p{
+font-size: 3.5vw;
+line-height: 1.4;
+color: navy;
+  }
+  #mportfolio .wrap ul li div:nth-child(3){
+justify-content: right;
+  }
+#mportfolio .wrap ul li div a{
+  text-align: right;
+  color: #828ff7;
+  border: 1px solid;
+  padding:2.5px;
+  border-radius: 3px;
+}
+
 }
