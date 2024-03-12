@@ -8,7 +8,6 @@ div#title {
   animation-name: square;
   position: relative;
   width: 18vw;
-  height: 36vh;
 } 
 @keyframes square{
    0%{

@@ -1,3 +1,8 @@
+#hi{
+  display: flex;
+  overflow-x: hidden; 
+  width: 1599px;
+}
 .portfolio{
   background: linear-gradient(#5ca0de, #2f8add);
   position: relative;
@@ -47,27 +52,27 @@ a.current::after{
     top: 246px;
 }
 #portfolio2 a.current::after{
-  left: 34.5vw;
+  left: 37.2vw;
     width: 57px;
 }
 #portfolio3 a.current::after{    
-  left: 38.7vw;
+  left: 41.5vw;
     width: 57px;
 }
 #portfolio4 a.current::after{
-  left: 43.5vw;
-  width: 90px;
+  left: 46vw;
+  width: 97px;
 }
 #portfolio5 a.current::after{
-  left: 50vw;
-  width: 57px;
+  left: 52.8vw;
+  width: 57px; 
 }
 #portfolio6 a.current::after{
-  left: 54.5vw;
+  left: 40vw;
   width: 80px;
 }
 #portfolio7 a.current::after{
-  left: 60.5vw;
+  left: 57.3vw;
   width: 80px;
 }
 .portfolio .wrap .detail{

@@ -9,12 +9,9 @@
   background-position: center;
   } 
   div#title .wrap{
-  height: 100%;
-  align-items: center;
-  justify-content: center;
   }
   div#title .wrap>div{
-  height: 100%;
+
   }
   div#title .wrap h2{   
   font-size: 35px;
@@ -32,6 +29,7 @@
   section#about{
   height: 700px;
   margin-top: -33px;
+  padding-top: 103px;
   }
   section#about .wrap{
     
@@ -92,6 +90,12 @@
   min-height: 900px;
   height: 100vh;
   }
+  
+  .portfolio .wrap{
+    padding: 0;
+    margin: 0;
+    margin-top: -372px !important;
+  }
   section#portfolio .wrap{
     
   display: flex;
@@ -118,10 +122,6 @@
   display: flex;
   align-items: center;
   }
- .detail1, .detail3, .detail4, .detail5, .detail6, .detail10, .detail11{
-  display: none !important;
-  }
-
   section#about > .wrap{
   width: 100%;
   }
