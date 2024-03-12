@@ -46,7 +46,8 @@
 
    
 // <!-- 반응형 -->
-      $(window).scroll(function(){
+      if($(window).width()>767){
+         $(window).scroll(function(){
          console.log($(window).scrollTop());
          //스크롤 - 어바웃
          if($(window).scrollTop()>630){
@@ -72,6 +73,15 @@
          }
       });
 
+      }
+      else{
+         if($(window).scrollTop()>250){
+            $(".animation_about").addClass("show");
+         }
+         if($(window).scrollTop()>880){
+            $(".animation_skill").addClass("show");
+         }
+      }
       // 햄버거 버튼
       $(".ham").click(function(){
          $(".header .wrap ul").toggleClass("click");
