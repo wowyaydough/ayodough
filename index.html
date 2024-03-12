@@ -47,16 +47,30 @@
       
    // <!-- 반응형 -->
          $(window).scroll(function(){
-	        
+	        console.log($(window).scrollTop());
             //스크롤 - 어바웃
-            if($(window).scrollTop()>120){
+            if($(window).scrollTop()>630){
                $(".animation_about").addClass("show");
+               $(".header .wrap ul li a").removeClass("currentT");
+               $(".header .wrap ul li:nth-child(1) a").addClass("currentT");
+               
             }
             // 스크롤 - 스킬
-            if($(window).scrollTop()>1200){
+            if($(window).scrollTop()>1630){
                $(".animation_skill").addClass("show");
+               $(".header .wrap ul li a").removeClass("currentT");
+               $(".header .wrap ul li:nth-child(2) a").addClass("currentT");
+            }
+
+            if($(window).scrollTop()>2500){
+               $(".header .wrap ul li a").removeClass("currentT");
+               $(".header .wrap ul li:nth-child(3) a").addClass("currentT");
             }
             
+            if($(window).scrollTop()>3500){
+               $(".header .wrap ul li a").removeClass("currentT");
+               $(".header .wrap ul li:nth-child(4) a").addClass("currentT");
+            }
          });
 
          // 햄버거 버튼
@@ -453,7 +467,8 @@
                   <img src="img/qr.PNG" alt="카카오 오픈채팅 QR코드">
                </figure>
                <p>e-mail :</p>
-               <p>makemyownwaysecond@gmaill.com</p><br>
+               <p>makemyownwaysecond@gmaill.com</p>
+               <p><br></p>
                <p>카카오 오픈채팅 : <br> <a href="https://open.kakao.com/o/su8dZkeg" target="_blank">https://open.kakao.com/o/su8dZkeg</a></p>
             </h3>
          </div>
