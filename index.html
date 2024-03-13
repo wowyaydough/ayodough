@@ -52,35 +52,52 @@ $(document).ready(function(){
 });
 </script>
 
-<!-- 가로 스크롤 -->
+<!-- 포트폴리오 클릭 이벤트 -->
 <script>
-   if($(window).width()>767){
-      const scrollContainer = document.querySelector("#hi");
+   $(document).ready(function(){
+      $(".istec").click(function(){
+         $(".pf").removeClass("display");
+         $(".portfolio_list a").removeClass("current")
+         $(this).addClass("current")
+         $(".portfolio2").addClass("display");
+         return false;
+      });
 
-      scrollContainer.addEventListener("wheel", (evt) => {
-         evt.preventDefault();
-         scrollContainer.scrollLeft += evt.deltaY;
-      })
-   
-   };
+      $(".tooniverse").click(function(){
+         $(".pf").removeClass("display");
+         $(".portfolio_list a").removeClass("current")
+         $(this).addClass("current")
+         $(".portfolio3").addClass("display");
+         return false;
+      });
+
+      $(".etude").click(function(){
+         $(".pf").removeClass("display");
+         $("a.current").removeClass("current")
+         $(this).addClass("current")
+         $(".portfolio4").addClass("display");
+         return false;
+      });
+
+      $(".hitejinro").click(function(){
+         $(".pf").removeClass("display");
+         $(".portfolio_list a").removeClass("current")
+         $(this).addClass("current")
+         $(".portfolio5").addClass("display");
+         return false;
+      });
+
+      $(".asty").click(function(){
+         $(".pf").removeClass("display");
+         $(".portfolio_list a").removeClass("current")
+         $(this).addClass("current")
+         $(".portfolio1").addClass("display");
+         return false;
+      });
+   });
 </script>
 
-<!-- 타이핑 효과 -->
-<script>
-   const content = "안녕하세요 웹퍼블리셔 황도연입니다."
-   const text = document.querySelector(".text");
-   let i = 0;
 
-   function typing(){
-      if(i<content.length){
-         let txt = content.charAt(i);
-         text.innerHTML += txt;
-         i++;
-      }
-
-   }
-   setInterval(typing, 200)
-</script>
 
 <body>
    <!-- header -->
@@ -176,27 +193,22 @@ $(document).ready(function(){
       </div>
    </section>
 
-  
-
-  
-  <!-- portfolio -->
-   <div id = hi>
-   <!-- portfolio asty -->
+   <!-- portfolio -->
    <section id="portfolio2" class="vh100 portfolio">
       <div class="wrap">
          <h2 class="h2">portfolio</h2>
          <ul class="flex portfolio_list">
-            <li><a href="#portfolio2" class="current">Asty</a></li>
+            <li><a href="" class="current asty btn">Asty</a></li>
             <span class="line"></span>
-            <li><a href="#portfolio3">ISTEC</a></li>
+            <li><a href="" class="istec btn">ISTEC</a></li>
             <span class="line"></span>
-            <li><a href="#portfolio4">Tooniverse</a></li>
+            <li><a href="" class="tooniverse btn">Tooniverse</a></li>
             <span class="line"></span>
-            <li><a href="#portfolio5">에뛰드</a></li>
+            <li><a href="" class="etude btn">에뛰드</a></li>
             <span class="line"></span>
-            <li><a href="#portfolio7">하이트진로</a></li>
+            <li><a href="" class="hitejinro btn">하이트진로</a></li>
          </ul>
-            <ul class="portfolio2">
+            <ul class="portfolio1 display pf">
                <li class="detail detail10">
                   <figure>
                      <a href="https://wowyaydough.github.io/Asty/" target="_blank"><img src="img/portfolio/asty.png" alt="asty"></a>
@@ -216,25 +228,7 @@ $(document).ready(function(){
                   </div>
                </li>
             </ul>
-      </div>
-   </section>
-
-   <!-- istec -->
-   <section id="portfolio3" class="vh100 portfolio">
-      <div class="wrap">
-         <h2 class="hide">portfolio</h2>
-         <ul class="flex portfolio_list">
-            <li><a href="#portfolio2">Asty</a></li>
-            <span class="line"></span>
-            <li><a href="#portfolio3" class="current">ISTEC</a></li>
-            <span class="line"></span>
-            <li><a href="#portfolio4">Tooniverse</a></li>
-            <span class="line"></span>
-            <li><a href="#portfolio5">에뛰드</a></li>
-            <span class="line"></span>
-            <li><a href="#portfolio7">하이트진로</a></li>
-         </ul>
-            <ul class="portfolio2">
+            <ul class="portfolio2 pf">
                <li class="detail detail11">                 
                   <figure>
                      <a href="https://wowyaydough.github.io/ISTEC/" target="_blank"><img src="img/portfolio/ISTEC.png" alt="ISTEC"></a>
@@ -257,25 +251,7 @@ $(document).ready(function(){
                   </div>              
                </li>
             </ul>
-      </div>
-   </section>
-
-   <!-- tooniverse -->
-   <section id="portfolio4" class="vh100 portfolio">
-      <div class="wrap">
-         <h2 class="hide">portfolio</h2>
-         <ul class="flex portfolio_list">
-            <li><a href="#portfolio2">Asty</a></li>
-            <span class="line"></span>
-            <li><a href="#portfolio3">ISTEC</a></li>
-            <span class="line"></span>
-            <li><a href="#portfolio4" class="current">Tooniverse</a></li>
-            <span class="line"></span>
-            <li><a href="#portfolio5">에뛰드</a></li>
-            <span class="line"></span>
-            <li><a href="#portfolio7">하이트진로</a></li>
-         </ul>
-            <ul class="portfolio2">
+            <ul class="portfolio3 pf">
                <li class="detail detail7">                 
                   <figure>
                      <a href="https://wowyaydough.github.io/Tooniverse/" target="_blank"><img src="img/portfolio/Tooniverse.PNG" alt="Tooniverse"></a>
@@ -294,25 +270,7 @@ $(document).ready(function(){
                  
                </li>
             </ul>
-      </div>
-   </section>
-
-   <!-- ETUDE -->
-   <section id="portfolio5" class="vh100 portfolio">
-      <div class="wrap">
-         <h2 class="hide">portfolio</h2>
-         <ul class="flex portfolio_list">
-            <li><a href="#portfolio2">Asty</a></li>
-            <span class="line"></span>
-            <li><a href="#portfolio3">ISTEC</a></li>
-            <span class="line"></span>
-            <li><a href="#portfolio4">Tooniverse</a></li>
-            <span class="line"></span>
-            <li><a href="#portfolio5" class="current">에뛰드</a></li>
-            <span class="line"></span>
-            <li><a href="#portfolio7">하이트진로</a></li>
-         </ul>
-            <ul class="portfolio2">
+            <ul class="portfolio4 pf">
                <li class="detail detail8">
                   <figure>
                      <a href="https://wowyaydough.github.io/Etude/" target="_blank"><img src="img/portfolio/Etude.PNG" alt="Etude"></a>
@@ -330,28 +288,9 @@ $(document).ready(function(){
                         <a href="javascript:void(window.open('https://ayodough.mycafe24.com/portfolio/Etude/','Etude','width=770px'))">770px</a>
                      </div>
                   </div>
-           
-         </li>
+               </li>
             </ul>
-      </div>
-   </section>
-
-   <!-- HITEJINRO -->
-   <section id="portfolio7" class="vh100 portfolio">
-      <div class="wrap">
-         <h2 class="hide">portfolio</h2>
-         <ul class="flex portfolio_list">
-            <li><a href="#portfolio2">Asty</a></li>
-            <span class="line"></span>
-            <li><a href="#portfolio3">ISTEC</a></li>
-            <span class="line"></span>
-            <li><a href="#portfolio4">Tooniverse</a></li>
-            <span class="line"></span>
-            <li><a href="#portfolio5">에뛰드</a></li>
-            <span class="line"></span>
-            <li><a href="#portfolio7" class="current">하이트진로</a></li>
-         </ul>
-            <ul class="portfolio2">
+            <ul class="portfolio5 pf">
                <li class="detail detail12">
                   <figure>
                      <a href="https://wowyaydough.github.io/pf4_hitejinro/" target="_blank"><img src="img/portfolio/hitejinro.PNG" alt="hitejinro"></a>
@@ -373,7 +312,13 @@ $(document).ready(function(){
             </ul>
       </div>
    </section>
-   </div>
+
+   
+
+
+
+  
+
 
 <!-- mobile portfolio -->
 <section id="mportfolio" class="hide">
@@ -463,9 +408,9 @@ $(document).ready(function(){
 
          <div class="about_right animation_about animation2">
             <p class="animation_about animation1 bigger">
-               한 걸음씩, <span class="text_navy">&nbsp;천천히</span>
+               한 걸음씩, 꾸준히
             </p>
-            <p>열정을 가지고 &nbsp; <span class="text_navy"> 발전해가겠습니다</span></p>
+            <p>열정을 가지고 단단해지겠습니다</span></p>
             <br>
          </div>
          <div class="img">
@@ -485,7 +430,8 @@ $(document).ready(function(){
             <p>e-mail :</p>
             <p>makemyownwaysecond@gmaill.com</p>
             <p><br></p>
-            <p>카카오 오픈채팅 : <br> <a href="https://open.kakao.com/o/su8dZkeg" target="_blank">https://open.kakao.com/o/su8dZkeg</a></p>
+            <p>카카오 오픈채팅 : </p>
+            <p><a href="https://open.kakao.com/o/su8dZkeg" target="_blank">https://open.kakao.com/o/su8dZkeg</a></p>
          </div>
       </div>
    </div>
@@ -498,7 +444,7 @@ $(document).ready(function(){
    <!-- footer -->
    <footer>
       <p>Copyright © 2024 A-yo day!</p>
-      <p>위 사이트는 개인 포트폴리오 용도로 제작되었습니다.</p>
+      <p>해당 사이트는 개인 포트폴리오 용도로 제작되었습니다.</p>
    </footer>
 
 
