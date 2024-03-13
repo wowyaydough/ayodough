@@ -1,9 +1,11 @@
 @media screen and (max-width:1024px){
 /*  header  */
   .header .wrap ul li{ 
-  padding-left: 75px;
+  padding-left: 28px;
   }
-  
+  .header .wrap ul a{
+    font-size: 3vw;
+  }
   /*  title  */
   div#title{
   background-position: center;
@@ -73,7 +75,8 @@ animation-delay:5.1s !important;
     
   }
   section#skill .wrap > h2{
-    font-size: 8vw !important;
+    font-size: 5vw !important;
+    padding-top: 6vw;
   }
   .h2{
     font-size: 5vw !important;
@@ -84,8 +87,7 @@ animation-delay:5.1s !important;
   section#about .about_right h3{
     font-size: 3vw;
   }
-  section .wrap .animation_about.show ul li{
-  }
+
   section#about .about_right p{
     font-size: 2vw;
   }
@@ -107,6 +109,7 @@ animation-delay:5.1s !important;
   
   section .wrap .animation_about.show{
   padding-top: 6vw;
+  margin-top: 0 !important;
   }
   
   section#about .about_left article img{
@@ -143,9 +146,12 @@ animation-delay:5.1s !important;
 /*  portfolio  */
   #hi{
     width:1024px;
+    height: 73vh;
   }
   .portfolio{
-  height: 103vh !important;
+    width:1024px;
+    height: 110vh;
+    padding-top: 50px;
   }
   .portfolio .wrap .detail figure{
     width: 60vw;
@@ -234,10 +240,21 @@ animation-delay:5.1s !important;
   section#about .about_left article img{
   width: 32vw;
   }
+  section#contact{
+    height: 80vh;
+    padding-top: 50px;
+  }
+  section#contact h3{
+    font-size: 5vw;
+  }
   #contact .wrap .contact_left{
     
   padding: 0;
-  width: 60vw;
+  width: 34vw;
+  }
+
+  section#contact figure img{
+    width: 30vw;
   }
   section#contact p{
     
@@ -245,11 +262,23 @@ animation-delay:5.1s !important;
   }
 }
 @media screen and (max-width:768px){
-  .header .wrap a.logo{
+  
+  .wrap {
+    padding-right:30px;
+    padding-left: 30px;
+  }
+  .header .wrap{
+    padding:0px 15px;
+    width:100%;
+  }
+
+  .header .wrap ul{
+    padding-right:30px
   }
 /*  about  */
   section#about{
-  height: 100vh;
+  height: 87vh;
+  padding-top: 0;
   }
   section#about .about{
   flex-direction: column;
@@ -274,10 +303,10 @@ padding-top: 42px;
 /*  skill  */
   section#skill{
     
-  height: 73vh;
+  height: 67vh;
   }
   section#skill .wrap{
-    
+    padding-top: 0;
   }
   section#skill .wrap #detail > div{
     
@@ -297,12 +326,90 @@ padding-top: 42px;
   }
 /*  portfolio  */
   .portfolio{
-  height: 80vh !important;
+  height: 100vh !important;
   }
  
- 
+  #hi{
+    display: none;
+  }
+  #mportfolio{
+    display: block !important;
+  }
+  #mportfolio{
+    display: block !important;
+    background-color: white;
+  }
+  #mportfolio .wrap h2{
+    font-size: 5vw;
+    color: navy;
+    padding-top: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  #mportfolio .wrap ul{
+}
+
+#mportfolio .wrap ul li{
+  padding-bottom: 45px;
+}
+
+#mportfolio .wrap ul li figure{
+  display: flex;
+    justify-content: center;
+}
+
+#mportfolio .wrap ul li figure a{
+}
+  #mportfolio .wrap ul li figure a img{
+width: 80vw;    
+  }
+  .asty img, .hitejinro img{
+    border: 1px solid #eee;
+  }
+#mportfolio .wrap ul li div:nth-child(2){
+padding-bottom: 1vw;
+text-align: right;
+padding-right: 6vw;
+padding-top: 2vw;
+  }
+
+#mportfolio .wrap ul li div h3{
+  line-height: 1.5;
+  color: #5f53f2;
+  font-size: 2.5vw;
+}
+
+#mportfolio .wrap ul li div p{
+font-size: 2vw;
+line-height: 1.4;
+color: navy;
+  }
+  #mportfolio .wrap ul li div:nth-child(3){
+justify-content: right;
+padding-right: 42px;
+  }
+#mportfolio .wrap ul li div a{
+  text-align: right;
+  color: #828ff7;
+  border: 1px solid;
+  padding:2.5px;
+  border-radius: 3px;
+  margin-left: 1vw;
+  font-size: 1.7vw;
+}
+  .wrap{
+    padding-top: 50px;
+  }
+  section .wrap > h2{
+    padding:0;
+    font-size: 5vw;
+    text-transform: uppercase;
+    text-align: center;
+  }
   section#portfolio2 .wrap{
- padding-top: 600px !important;
   }
   #portfolio3 .wrap{
     padding-top: 628px;
@@ -325,14 +432,14 @@ height: 90vh;
   font-size: 4vw;
   }
   section#contact figure{
-    width:40vw;
+    width:64vw;
     padding-left: 54px;
   }
   #contact .wrap .contact_left{
-    margin-right: -168px;
+    padding-right: 3vw;
+    padding-left: 25vw;
   }
   #contact .wrap .contact_right{
-    padding-right: 23px !important;
   }
   section#contact p{
     font-size: 3.5vw;
@@ -374,11 +481,17 @@ height: 90vh;
   width: 100%;
   min-height: initial;
   z-index: 2;
+  align-items: center;
   }
   .header .wrap a.logo{
   width: 62px;
   height: 62px;
   background-repeat: no-repeat;
+  padding-bottom: 10px;
+  }
+  .header .wrap a.logo h1{
+    width: 17vw;
+
   }
   .ham{
   display: flex;
@@ -909,5 +1022,11 @@ justify-content: right;
   padding:2.5px;
   border-radius: 3px;
 }
-
+  footer{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+  }
 }
