@@ -373,10 +373,11 @@ padding-right: 42px;
     padding-top: 50px;
   }
   section .wrap > h2{
-    padding:0;
+    padding:0; 
     font-size: 5vw;
     text-transform: uppercase;
     text-align: center;
+    padding-top: 10vw;
   }
   section#portfolio2 .wrap{
   }
