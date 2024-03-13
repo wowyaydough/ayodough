@@ -41,17 +41,46 @@
    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 
 
-   <!-- // 헤더 메뉴  -->
-   <script>
-   $(document).ready(function(){
-      // 햄버거 버튼
-      $(".ham").click(function(){
-         $(".header .wrap ul").toggleClass("click");
-         return false;
-      });
+<!-- // 헤더 메뉴  -->
+<script>
+$(document).ready(function(){
+   // 햄버거 버튼
+   $(".ham").click(function(){
+      $(".header .wrap ul").toggleClass("click");
+      return false;
    });
-   </script>
+});
+</script>
 
+<!-- 가로 스크롤 -->
+<script>
+   if($(window).width()>767){
+      const scrollContainer = document.querySelector("#hi");
+
+      scrollContainer.addEventListener("wheel", (evt) => {
+         evt.preventDefault();
+         scrollContainer.scrollLeft += evt.deltaY;
+      })
+   
+   };
+</script>
+
+<!-- 타이핑 효과 -->
+<script>
+   const content = "안녕하세요 웹퍼블리셔 황도연입니다."
+   const text = document.querySelector(".text");
+   let i = 0;
+
+   function typing(){
+      if(i<content.length){
+         let txt = content.charAt(i);
+         text.innerHTML += txt;
+         i++;
+      }
+
+   }
+   setInterval(typing, 200)
+</script>
 
 <body>
    <!-- header -->
@@ -70,13 +99,14 @@
    <!-- title -->
    <div id="title" class="vh100 box">
       <div class="wrap flex column">
-         <div class="typing text">
-            <h2 class="typing_effect1">나답게, 새롭게</h2>
+         <div class="typing text_box">
+            <h2 class="typing_effect1 text">나답게, 새롭게</h2>
+            <p class="today text"> 오늘을 행복하게</p><br>
+            <div class="flex">
+                  <p class="wave_effect4 textC1 color_navy text">웹퍼블리셔 황도연 입니다.</p>
+            </div>
          </div>
-         <p class="today text"> 오늘을 행복하게</p><br>
-         <div class="flex">
-               <p class="wave_effect4 textC1 color_navy">웹퍼블리셔 황도연 입니다.</p>
-         </div>
+        
       </div>
    </div>
 
@@ -471,16 +501,6 @@
       <p>위 사이트는 개인 포트폴리오 용도로 제작되었습니다.</p>
    </footer>
 
-   <script>
-      if($(window).width()>767){
-         const scrollContainer = document.querySelector("#hi");
 
-         scrollContainer.addEventListener("wheel", (evt) => {
-            evt.preventDefault();
-            scrollContainer.scrollLeft += evt.deltaY;
-         })
-      
-      };
-   </script>
 </body>
 </html>
