@@ -14,6 +14,7 @@ div#title .wrap{
   flex-direction: column;
 }
 div#title .wrap p {
+  font-size: 3vw;
 }
 div#title .wrap .typing{
   display: flex;

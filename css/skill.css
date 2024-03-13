@@ -190,15 +190,21 @@ section#skill .wrap #detail{
 section#skill .wrap #detail>div{
   
   display: flex;
-  gap: 162px;
-  width: 56%;
+  width: 57%;
 }
 section#skill .wrap #detail p.top{
-  padding-bottom: 29px;
+  padding-bottom: 9px;
   color: white;
   text-align: left;
   width: 56%;
   font-size: 19px;
+}
+section#skill .wrap #detail p.under{
+  color: white;
+  text-align: left;
+  width: 56%;
+  font-size: 19px;
+  padding-bottom:30px
 }
 section#skill .wrap #detail em{
   color:white;
