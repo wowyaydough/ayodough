@@ -1,43 +1,14 @@
 .header{
-   position: fixed;
-   width: 100vw;
-   z-index: 1;
-   opacity:0;
-   animation-name:hd;
-   animation-duration:1s;
-   animation-fill-mode: forwards;
-   animation-timing-function: ease-in; 
-   animation-direction: reverse;
-   animation-delay: 0.8s;
-   top: 0;
-   right: 0;
-   left: 0;
 } 
-@keyframes hd{
-   0%{
-      opacity: 1;
-   }
-   100%{
-      transform:translatey(-100%); 
-   }
-}
+
 .header .wrap{
    align-items: center;
-   animation-name:header;
-   animation-duration: 1s;
-   animation-delay: 1s;
-   animation-fill-mode: forwards;
-   animation-timing-function: ease-in;
-   animation-direction: reverse;
-   /*! margin: 0; */
    padding: 0 105px;
+   background-color: rgba(0,0,255,0.5);
+   position: fixed;
+   width: 91%;
 }
-@keyframes header{
-   0%{
-    background-color:#0c5091;
-    z-index: 10;     
-   }
-}
+
 .header .wrap a.logo h1{
    font-size: 0;
    background-image: url(../img/logo.png);
