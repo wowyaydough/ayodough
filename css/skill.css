@@ -37,13 +37,13 @@ section#skill .wrap .skill{
 }
 .animation_skill{
   opacity: 0;
-}
-section .wrap .animation_skill.show{
-  animation-name:sliding_right_to_left;
   animation-duration:1s;
   animation-direction: reverse;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
+}
+section .wrap .animation_skill.show{
+  animation-name:sliding_right_to_left; 
 }
 .animation1{ 
   animation-delay: 0.2s;

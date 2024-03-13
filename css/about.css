@@ -32,20 +32,21 @@ section#about .about::before{
   animation-direction: reverse;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
-  opacity: 0;
+  animation-delay: 10s;
 }
 
 .animation_about{
   opacity: 0;
-}
-section .wrap .animation_about.show{
-  animation-name:sliding_right_to_left;
   animation-duration:1s;
   animation-direction: reverse;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
   text-align: center;
   color: #171a45;
+}
+section .wrap .animation_about.show{
+  animation-name:sliding_right_to_left;
+
 }
 section .wrap .animation_about.show ul{
   padding: 9px;

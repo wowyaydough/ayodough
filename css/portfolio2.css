@@ -49,7 +49,7 @@ a.current::after{
   z-index: 1;
   display: block;
   position: absolute;
-    top: 261px;
+    top: 265px;
 }
 #portfolio2 a.current::after{
   left: 34.5vw;

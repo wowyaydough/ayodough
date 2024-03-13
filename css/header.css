@@ -55,7 +55,7 @@
    text-transform: capitalize;
 }
 .header .wrap ul a.currentT{
-color:powderblue;
+color:#1affea;
 }
 .header .wrap ul a:hover{
    color:powderblue;  

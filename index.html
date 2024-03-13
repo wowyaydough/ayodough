@@ -43,38 +43,37 @@
    <!-- // 헤더 메뉴  -->
    <script>
    $(document).ready(function(){
-
    
 // <!-- 반응형 -->
-      if($(window).width()>767){
+   if($(window).width()>767){
          $(window).scroll(function(){
-         console.log($(window).scrollTop());
-         //스크롤 - 어바웃
-         if($(window).scrollTop()>530){
-            $(".animation_about").addClass("show");
-            $(".header .wrap ul li a").removeClass("currentT");
-            $(".header .wrap ul li:nth-child(1) a").addClass("currentT");
-         }
-         // 스크롤 - 스킬
-         if($(window).scrollTop()>1430){
-            $(".animation_skill").addClass("show");
-            $(".header .wrap ul li a").removeClass("currentT");
-            $(".header .wrap ul li:nth-child(2) a").addClass("currentT");
-         }
+   
+            //스크롤 - 어바웃
+            if($(window).scrollTop()>750){
+               $(".animation_about").addClass("show");
+               $(".header .wrap ul li a").removeClass("currentT");
+               $(".header .wrap ul li:nth-child(1) a").addClass("currentT");
+            }
+            // 스크롤 - 스킬
+            if($(window).scrollTop()>1430){
+               $(".animation_skill").addClass("show");
+               $(".header .wrap ul li a").removeClass("currentT");
+               $(".header .wrap ul li:nth-child(2) a").addClass("currentT");
+            }
 
-         if($(window).scrollTop()>2500){
-            $(".header .wrap ul li a").removeClass("currentT");
-            $(".header .wrap ul li:nth-child(3) a").addClass("currentT");
-         }
-         
-         if($(window).scrollTop()>3500){
-            $(".header .wrap ul li a").removeClass("currentT");
-            $(".header .wrap ul li:nth-child(4) a").addClass("currentT");
-         }
-    })}
+            if($(window).scrollTop()>2500){
+               $(".header .wrap ul li a").removeClass("currentT");
+               $(".header .wrap ul li:nth-child(3) a").addClass("currentT");
+            }
+            
+            if($(window).scrollTop()>3500){
+               $(".header .wrap ul li a").removeClass("currentT");
+               $(".header .wrap ul li:nth-child(4) a").addClass("currentT");
+            }
+      })}
     
-    if($(window).width()<767){
-         if($(window).scrollTop()>250){
+    if($(window).width()<768){
+         if($(window).scrollTop()>370){
             $(".animation_about").addClass("show");
          }
          if($(window).scrollTop()>880){
@@ -521,7 +520,7 @@
                <a href="javascript:void(window.open('https://ayodough.mycafe24.com/portfolio/Etude/','Etude','width=770px'))">770px</a>
             </div>
          </li>
-         <li>
+         <li class="hitejinro">
             <figure>
                <a href="https://wowyaydough.github.io/pf4_hitejinro/" target="_blank"><img src="img/portfolio/hitejinro.PNG" alt="hitejinro"></a>
             </figure>
