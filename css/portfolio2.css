@@ -12,7 +12,7 @@
   display: none; 
 }
 .portfolio{
-  background: linear-gradient(#5ca0de, #2f8add);
+
   position: relative;
   display: flex;
   justify-content: center;
@@ -24,11 +24,14 @@
 
 .portfolio .wrap{ 
   display: grid;
-  grid-template-columns: repeat(3,15vw);
+  grid-template-columns: repeat(3,27vw); 
   grid-template-rows: auto auto;
   column-gap: 35px;
   row-gap: 30px;
 
+}
+#portfolio1{
+    background: linear-gradient(#7aafe0, #308bdd);
 }
 #portfolio2 .wrap{
 
@@ -147,6 +150,10 @@ display:none;
 }
 .portfolio .wrap .detail figure img{
   width:15vw;
+  transition: 1s;
+}
+.portfolio .wrap .detail figure img:hover{
+  transform: scale(1.1); 
 }
 section#portfolio2 .wrap .detail4{
  
@@ -178,6 +185,7 @@ section#portfolio2 .wrap>div>.left>h2{
 .portfolio .detail{
   
   display: flex;
+  overflow: hidden;
 }
 
 #portfolio2 .detail{

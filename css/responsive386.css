@@ -53,9 +53,8 @@
   section#skill{
     width:100%; 
     background: #85c6ff;
-    height: 85vh;
-    min-height: 85vh;
-    padding-top: 50px;
+    height: 77vh;
+    min-height: 77vh;
   }
   section#skill .wrap > h2{
     font-size: 8vw !important;
@@ -110,9 +109,7 @@
     font-size: 3.5vw;
   }
 /*  portfolio  */
-.portfolio{
-  display: none;
-}
+
 
 #mportfolio{
   display: block !important;
@@ -145,16 +142,37 @@
   }
   .portfolio .wrap .detail div a{
     
-  width: 12vw;
+  font-size: 4vw;
+  width: fit-content;
   }
- 
- 
+  .portfolio .wrap .detail figure img{
+  width: 35vw;
+  }
+  #portfolio2 .wrap .detail figure img{
+      width: 70vw;
+  }
+ #portfolio2 .wrap {
+    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -65px;
+  }
+  #portfolio2{
+    
+  height: 126vh !important;
+  min-height: 100vh;
+  }
+  #portfolio2 .wrap .detail div:nth-child(2) div{
+  padding-top: 2vw;
+  width: 100%;
+    }
   /* contact  */
   section#contact{
     width:100%; 
     background-color: #daf1ff;
-    height: 88vh !important;
-    min-height: 88vh;
+    height: 63vh !important;
+    min-height: 63vh;
     background-image: url(../img/title3.jpg);
     background-size: cover;
     background-position-x: -89vw;
@@ -172,12 +190,13 @@
   }
   section#contact .wrap h2{
     padding:0;
-    padding-bottom: 100px;
+    /*! padding-bottom: 100px; */
   }
   section#contact .about_left{
   display: flex;
   justify-content: center;
   width: 100%;
+  display: none;
   }
   .contact_right figure img{
       width: 30vw;
