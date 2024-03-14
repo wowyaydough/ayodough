@@ -1,0 +1,207 @@
+#hi{
+  display: flex;
+  overflow-x: hidden; 
+  width: 1903px;
+}
+#portfolio2{
+  padding-top: 26px;
+  display: flex;
+  flex-direction: column;
+}
+.hidden{
+  display: none; 
+}
+.portfolio{
+  background: linear-gradient(#5ca0de, #2f8add);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 129vh;
+  min-height: 129vh;
+  flex-direction: column;
+}
+
+.portfolio .wrap{ 
+  display: grid;
+  grid-template-columns: repeat(3,15vw);
+  grid-template-rows: auto auto;
+  column-gap: 35px;
+  row-gap: 30px;
+
+}
+#portfolio2 .wrap{
+
+}
+
+.portfolio h2{
+  color: white;
+  padding-bottom: 50px;
+}
+
+
+.portfolio >.wrap >ul.portfolio_list{
+  color: powderblue;
+  justify-content: center;
+  padding-top: 7px;
+  padding-bottom: 61px;
+  display:none;
+}
+
+.portfolio > .wrap > ul.portfolio_list li{
+  /*! padding-bottom: 26px; */
+}
+
+
+.portfolio > .wrap > ul.portfolio_list li a{
+  color: powderblue;
+}
+.pf{
+
+}
+.pf.display{
+ display: flex !important;
+width: fit-content;
+}
+a.current{
+  color:#3fffff !important; 
+}
+
+.portfolio .wrap .detail h2{
+  color: #c0dfff;
+  padding-bottom: 14px;
+  font-size: 30px;
+  grid-column: 1 / span 2;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.portfolio .wrap .detail div a{
+  color: #d5dcff;
+  padding: 5px;
+  font-size: 11pt;
+  margin: 0 4px;
+}
+
+.portfolio .wrap .detail div a:hover{
+  
+  color: #02fb90;
+}
+.portfolio .wrap .detail p{
+    text-align: left;
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  line-height: 2;
+}
+ul.portfolio1 li div{
+display:none;
+}
+.portfolio .wrap .detail figure {
+  padding-right: 0px;
+
+}
+#portfolio2 .wrap .detail figure{
+  padding-bottom:23px;
+  
+}
+.portfolio .wrap .detail div:nth-child(1){
+  
+  grid-row: 1;
+  grid-column: 2;
+}
+#portfolio2 .wrap .detail div:nth-child(2){
+  
+  grid-row: 1;
+  grid-column: 2;
+  padding-bottom: 11px;
+
+}
+#portfolio2 .wrap .detail div:nth-child(2) div{
+  
+  justify-content: right;
+}
+#portfolio2 .wrap .detail div:nth-child(2) h3{
+  display: none;
+}
+#portfolio2 .wrap .detail div:nth-child(2) p{
+  display: none;
+}
+.portfolio .wrap .detail div:nth-child(3){
+  
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+}
+.portfolio .wrap .detail div:nth-child(3) a{
+  color:white;
+  border:1px solid;
+  height: fit-content;
+  border-radius: 6px;
+  padding: 4px;
+  font-size: 13px;
+  margin-right: 18px;
+}
+.portfolio .wrap .detail figure img{
+  width:15vw;
+}
+section#portfolio2 .wrap .detail4{
+ 
+}
+section#portfolio2 .wrap .detail9{
+ 
+}
+section#portfolio2 .wrap .detail1.hide{
+ 
+}
+section#portfolio2 .wrap .detail.hide{
+  
+}
+section#portfolio2 .wrap .detail.detailShow{
+ 
+}
+section#portfolio2 .wrap .list a{
+  
+}
+
+section#portfolio2 .wrap .left{
+  
+}
+
+section#portfolio2 .wrap>div>.left>h2{
+
+}
+
+.portfolio .detail{
+  
+  display: flex;
+}
+
+#portfolio2 .detail{
+  flex-direction: column;
+}
+section#portfolio2 .detail::before{
+ 
+}
+section#portfolio2 .detail:hover::before{
+  
+}
+
+
+section#portfolio2 .wrap div .left p{
+
+}
+section#portfolio2 .wrap div .left a{
+ 
+}
+section#portfolio2 .wrap div .left a:hover{
+ 
+}
+section#portfolio2 .wrap .right{
+  
+
+}
+
