@@ -34,7 +34,8 @@
    <link rel="stylesheet" href="css/skill.css">
    <link rel="stylesheet" href="css/contact.css">
    <link rel="stylesheet" href="css/footer.css">
-   <link rel="stylesheet" href="css/responsive385.css">
+   <link rel="stylesheet" href="css/responsive1024.css">
+   <link rel="stylesheet" href="css/responsive768.css">
    <link rel="stylesheet" href="css/responsive386.css">
 
    <!-- jQuery 연결 -->
@@ -115,16 +116,11 @@ $(document).ready(function(){
    </div>
    <main>
    <!-- title -->
-   <div id="title" class="vh100 box">
+   <div id="title" class="vh100">
       <div class="wrap flex column">
-         <div class="typing text_box">
-            <h2 class="typing_effect1 text">나답게, 새롭게</h2>
-            <p class="today text"> 오늘을 행복하게</p><br>
-            <div class="flex">
-                  <p class="wave_effect4 textC1 color_navy text">웹퍼블리셔 황도연 입니다.</p>
-            </div>
-         </div>
-        
+         <h2>나답게, 새롭게</h2>
+         <p class="today"> 오늘을 행복하게</p><br>
+         <p class="color_navy">웹퍼블리셔 황도연 입니다.</p>  
       </div>
    </div>
 
@@ -133,11 +129,9 @@ $(document).ready(function(){
       <div class="wrap">
          <h2 class="animation_skill h2">skill</h2>
          <div id="skill_icon">
-            <div class="boxA animation_skill animation1">
             <article>
                <h3>Skills</h3>
-               <div>
-                  <figure>
+                  <figure class="img_skill">
                      <img src="img/skill/html.png" alt="html">
                      <img src="img/skill/css.png" alt="css">
                      <img src="img/skill/jq.png" alt="jQuery">
@@ -146,31 +140,24 @@ $(document).ready(function(){
                      <img src="img/skill/w3.png" alt="javascript">
                      <img src="img/skill/z.png" alt="javascript">
                   </figure>
-               </div>
             </article>
-            </div>
-            <div class="boxB animation_skill animation2">
-               <article>
-                  <h3>Tools</h3>
-                  <div>
-                     <figure>
-                        <img src="img/skill/ps.png" alt="photoshop">
-                        <img src="img/skill/ai.png" alt="illustrator">
-                        <img src="img/skill/f.png" alt="firefox">
-                        <img src="img/skill/gg.png" alt="firefox">
-                        <img src="img/skill/ov.png" alt="firefox">
-                        <img src="img/skill/ss.png" alt="firefox">
-                        <img src="img/skill/vv.png" alt="firefox">
-                     </figure>
-                  </div>
-               </article>
-            </div>
+            <article>
+               <h3>Tools</h3>
+                  <figure class="img_tools">
+                     <img src="img/skill/ps.png" alt="photoshop">
+                     <img src="img/skill/ai.png" alt="illustrator">
+                     <img src="img/skill/f.png" alt="firefox">
+                     <img src="img/skill/gg.png" alt="firefox">
+                     <img src="img/skill/ov.png" alt="firefox">
+                     <img src="img/skill/ss.png" alt="firefox">
+                     <img src="img/skill/vv.png" alt="firefox">
+                  </figure>
+            </article>
          </div>
          <div id="detail">
             <em>Education</em><br>
             <p class="top">국비지원 UI/UX 웹디자인/웹퍼블리싱 5개월 과정 수료</p> 
             <p class="under">5개월간 습득한 스킬과 사용툴입니다</p>
-
             <div>
                <p class="SKd">
                   - Emmet(젠코딩)<br>
@@ -198,113 +185,84 @@ $(document).ready(function(){
    <section id="portfolio1" class="vh100 portfolio">
       <h2 class="h2">portfolio</h2>
       <div class="wrap">
-            <ul class="portfolio1 display pf">
-               <li class="detail detail10">
-                  <figure>
-                     <a href="https://wowyaydough.github.io/pf1-accuniq/" target="_blank"><img src="img/portfolio/accuniq.png" alt="asty"></a>
-                  </figure>
-                  <div>
-                     <h3>ACCUNIQ</h3>
-                     <p>사용 기술 : HTML, CSS, jQuery</p>
-                     <p>참여도 : 90%</p>
-                     <p>작업기간 : 2023.11.27~2023.12.21 </p>
-                     <div class="flex">
-                        <a href="https://wowyaydough.github.io/pf1-accuniq/" target="_blank">바로가기</a>
-                     </div>
-                  </div>
-               </li>
-            </ul>
-            <ul class="portfolio1 display pf">
-               <li class="detail detail10">
-                  <figure>
-                     <a href="https://wowyaydough.github.io/LionHeart/" target="_blank"><img src="img/portfolio/lionheart.png" alt="lionheart"></a>
-                  </figure>
-                  <div>
-                     <h3>라이온하트</h3>
-                        <p>사용기술 : HTML, CSS, jQuery</p>
-                        <p>참여도 : 100%</p>
-                        <p>작업기간 : 2023.11.13~2024.11.29</p>
-                     <div class="flex">
-                        <a href="https://wowyaydough.github.io/LionHeart/" target="_blank">바로가기</a>
-                     </div>
-                  </div>
-               </li>
-            </ul>
-            <ul class="portfolio1 display pf">
-               <li class="detail detail10">
-                  <figure>
-                     <a href="https://wowyaydough.github.io/Carrot/" target="_blank"><img src="img/portfolio/Carrot.png" alt="Carrot"></a>
-                  </figure>
-                  <div>
-                     <h3>캐롯손해보험</h3>
+         <ul class="pf">
+            <li>
+               <figure>
+                  <a href="https://wowyaydough.github.io/pf1-accuniq/" target="_blank"><img src="img/portfolio/accuniq.png" alt="asty"></a>
+               </figure>
+               <div>
+                  <h3>ACCUNIQ</h3>
+                  <p>사용 기술 : HTML, CSS, jQuery</p>
+                  <p>참여도 : 90%</p>
+                  <p>작업기간 : 2023.11.27~2023.12.21 </p>
+               </div>
+            </li>
+            <li>
+               <figure>
+                  <a href="https://wowyaydough.github.io/LionHeart/" target="_blank"><img src="img/portfolio/lionheart.png" alt="lionheart"></a>
+               </figure>
+               <div>
+                  <h3>라이온하트</h3>
                      <p>사용기술 : HTML, CSS, jQuery</p>
                      <p>참여도 : 100%</p>
-                     <p>작업기간 : 2023.12.19~2024.02.20</p>
-                     <div class="flex">
-                        <a href="https://wowyaydough.github.io/Carrot/" target="_blank">바로가기</a>
-                     </div>
-                  </div>
-               </li>
-            </ul>
-            <ul class="portfolio1 display pf">
-               <li class="detail detail10">
-                  <figure>
-                     <a href="https://wowyaydough.github.io/BaskinRobbins/" target="_blank"><img src="img/portfolio/BR.png" alt="baskinrobbins"></a>
-                  </figure>
-                  <div>
-                     <h3>배스킨라빈스</h3>
-                     <p>사용기술 : HTML, CSS, jQuery</p>
-                     <p>참여도 : 100%</p>
-                     <p>작업기간 : 2023.12.19~2024.02.20</p>
-                     <div class="flex">
-                        <a href="https://wowyaydough.github.io/BaskinRobbins/" target="_blank">바로가기</a>
-                     </div>
-                  </div>
-               </li>
-            </ul>
-            <ul class="portfolio1 display pf">
-               <li class="detail detail10">
-                  <figure>
-                     <a href="https://wowyaydough.github.io/Asty/" target="_blank"><img src="img/portfolio/asty.png" alt="asty"></a>
-                  </figure>
-                  <div>
-                     <h3>아스티</h3>                
-                     <p>사용기술 : HTML, CSS, jQuery</p>
-                     <p>참여도 : 100%</p>
-                     <p>작업기간 : 2024.01.04~2024.01.24</p>
-                     <p>가장 처음 이미지 클론을 한 포트폴리오 입니다. <br>
-                        jQuery를 사용하여 창문 이미지효과를 주었습니다.
-                     </p>
-                     <div class="flex">
-                        <a href="https://wowyaydough.github.io/Asty/" target="_blank">바로가기</a>
-                     </div>
-                  </div>
-               </li>
-            </ul>
-            <ul class="portfolio1 pf display">
-               <li class="detail detail11">                 
-                  <figure>
-                     <a href="https://wowyaydough.github.io/ISTEC/" target="_blank"><img src="img/portfolio/ISTEC.png" alt="ISTEC"></a>
-                  </figure>
-                  <div>
-                     <h3>ISTEC</h3>
-                     <p>사용기술 : HTML, CSS, CSS 애니메이션</p>
-                     <p>참여도 : 100%</p>
-                     <p>완성도 : 70%</p>
-                     <p>작업기간 : 2023.12.18~2024.02.15</p>
-                     <p>가장 오래 작업한 포트폴리오 입니다. <br>
-                        3번째 페이지를 작업하면서 <br>
-                        CSS애니메이션과 hover기능에 대해 <br>
-                        이해할 수 있게 되었습니다<br>
-                        후반 애니메이션 작업을 진행할 예정입니다.
-                     </p>
-                     <div class="flex">
-                        <a href="https://wowyaydough.github.io/ISTEC/" target="_blank">바로가기</a>
-                     </div>
-                  </div>              
-               </li>
-            </ul>
-            
+                     <p>작업기간 : 2023.11.13~2024.11.29</p>
+               </div>
+            </li>
+            <li>
+               <figure>
+                  <a href="https://wowyaydough.github.io/Carrot/" target="_blank"><img src="img/portfolio/Carrot.png" alt="Carrot"></a>
+               </figure>
+               <div>
+                  <h3>캐롯손해보험</h3>
+                  <p>사용기술 : HTML, CSS, jQuery</p>
+                  <p>참여도 : 100%</p>
+                  <p>작업기간 : 2023.12.19~2024.02.20</p>
+               </div>
+            </li>
+            <li>
+               <figure>
+                  <a href="https://wowyaydough.github.io/BaskinRobbins/" target="_blank"><img src="img/portfolio/BR.png" alt="baskinrobbins"></a>
+               </figure>
+               <div>
+                  <h3>배스킨라빈스</h3>
+                  <p>사용기술 : HTML, CSS, jQuery</p>
+                  <p>참여도 : 100%</p>
+                  <p>작업기간 : 2023.12.19~2024.02.20</p>
+               </div>
+            </li>
+            <li>
+               <figure>
+                  <a href="https://wowyaydough.github.io/Asty/" target="_blank"><img src="img/portfolio/asty.png" alt="asty"></a>
+               </figure>
+               <div>
+                  <h3>아스티</h3>                
+                  <p>사용기술 : HTML, CSS, jQuery</p>
+                  <p>참여도 : 100%</p>
+                  <p>작업기간 : 2024.01.04~2024.01.24</p>
+                  <p>가장 처음 이미지 클론을 한 포트폴리오 입니다. <br>
+                     jQuery를 사용하여 창문 이미지효과를 주었습니다.
+                  </p>
+               </div>
+            </li>
+            <li>                 
+               <figure>
+                  <a href="https://wowyaydough.github.io/ISTEC/" target="_blank"><img src="img/portfolio/ISTEC.png" alt="ISTEC"></a>
+               </figure>
+               <div>
+                  <h3>ISTEC</h3>
+                  <p>사용기술 : HTML, CSS, CSS 애니메이션</p>
+                  <p>참여도 : 100%</p>
+                  <p>완성도 : 70%</p>
+                  <p>작업기간 : 2023.12.18~2024.02.15</p>
+                  <p>가장 오래 작업한 포트폴리오 입니다. <br>
+                     3번째 페이지를 작업하면서 <br>
+                     CSS애니메이션과 hover기능에 대해 <br>
+                     이해할 수 있게 되었습니다<br>
+                     후반 애니메이션 작업을 진행할 예정입니다.
+                  </p>
+               </div>              
+            </li>
+         </ul>
       </div>
    </section>
 
@@ -329,8 +287,6 @@ $(document).ready(function(){
                      </div>
                   </div>    
                </li>
-            </ul>
-            <ul class="portfolio4 pf">
                <li class="detail detail8">
                   <figure>
                      <a href="https://wowyaydough.github.io/Etude/" target="_blank"><img src="img/portfolio/Etude.png" alt="Etude"></a>
@@ -349,8 +305,6 @@ $(document).ready(function(){
                      </div>
                   </div>
                </li>
-            </ul>
-            <ul class="portfolio5 pf">
                <li class="detail detail12">
                   <figure>
                      <a href="https://wowyaydough.github.io/pf4_hitejinro/" target="_blank"><img src="img/portfolio/hitejinro.png" alt="hitejinro"></a>
@@ -366,8 +320,7 @@ $(document).ready(function(){
                         <a href="javascript:void(window.open('https://ayodough.mycafe24.com/portfolio/pf4/','HiteJinro','width=1200px'))">1200px</a>
                         <a href="javascript:void(window.open('https://ayodough.mycafe24.com/portfolio/pf4/','HiteJinro','width=786px'))">786px</a>
                      </div>
-                  </div>
-                  
+                  </div>    
                </li>
             </ul>
       </div>

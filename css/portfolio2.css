@@ -7,6 +7,7 @@
   padding-top: 26px;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(#338cdd,#4e85cc);
 }
 .hidden{
   display: none; 
@@ -17,21 +18,41 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 129vh;
-  min-height: 129vh;
+  height: 100vh;
+  min-height: 100vh;
   flex-direction: column;
 }
 
-.portfolio .wrap{ 
-  display: grid;
-  grid-template-columns: repeat(3,27vw); 
-  grid-template-rows: auto auto;
-  column-gap: 35px;
-  row-gap: 30px;
-
+.portfolio .wrap ul{ 
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  width: 56%;
+}
+#portfolio2 .wrap ul{
+  
+  width: 100%;
+}
+.portfolio .wrap ul li{
+  
+  width: 306px;
+  padding: 15px;
+}
+.portfolio .wrap ul li figure{
+  
+}
+.portfolio .wrap ul li div{
+  
+  display: none;
+}
+.portfolio .wrap ul li figure a{
+  display: block;
+}
+.portfolio .wrap ul li figure a img{
 }
 #portfolio1{
     background: linear-gradient(#7aafe0, #308bdd);
+    /*! display: none; */
 }
 #portfolio2 .wrap{
 
@@ -41,8 +62,14 @@
   color: white;
   padding-bottom: 50px;
 }
+.portfolio div{
 
-
+  display: flex;
+  justify-content: center;
+}
+.portfolio div ul{
+  
+}
 .portfolio >.wrap >ul.portfolio_list{
   color: powderblue;
   justify-content: center;
@@ -63,7 +90,7 @@
 
 }
 .pf.display{
- display: flex !important;
+ /*! display: flex !important; */
 width: fit-content;
 }
 a.current{
@@ -186,6 +213,7 @@ section#portfolio2 .wrap>div>.left>h2{
   
   display: flex;
   overflow: hidden;
+  padding: 10px;
 }
 
 #portfolio2 .detail{

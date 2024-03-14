@@ -43,6 +43,9 @@ section#skill .wrap .skill{
 section#skill .wrap article{
   
 }
+section#skill .wrap article:nth-child(1){
+  padding-right:70px;
+}
 section#skill .wrap .boxA article {
   padding-right: 45px;
 }
@@ -203,8 +206,8 @@ section#skill .wrap #detail p.top{
 section#skill .wrap #detail p.under{
   color: white;
   text-align: left;
-  width: 83%;
-  font-size: 2vw;
+  width: 56%;
+  font-size: 19px;
   padding-bottom:30px
 }
 section#skill .wrap #detail em{
