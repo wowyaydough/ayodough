@@ -47,6 +47,7 @@
 }
 .portfolio .wrap ul li figure a{
   display: block;
+  overflow: hidden;
 }
 .portfolio .wrap ul li figure a img{
 }
@@ -176,7 +177,6 @@ display:none;
   margin-right: 18px;
 }
 .portfolio .wrap .detail figure img{
-  width:15vw;
   transition: 1s;
 }
 .portfolio .wrap .detail figure img:hover{

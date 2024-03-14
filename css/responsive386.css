@@ -138,10 +138,15 @@
   #mportfolio .wrap ul li div:nth-child(3){
     padding-right:5vw;
   }
+  
   #mportfolio .wrap ul li div a{
     
   font-size: 3.3vw;
   padding: 1.3vw;
+  }
+  #portfolio2 .wrap ul{
+    
+  width: 49% !important;
   }
     .portfolio .wrap .detail>div{
     
