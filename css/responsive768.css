@@ -122,6 +122,10 @@
    .asty img, .hitejinro img{
      border: 1px solid #eee;
    }
+  .portfolio .wrap ul li{
+    
+  width: 165px;
+  }
  #mportfolio .wrap ul li div:nth-child(2){
  padding-bottom: 1vw;
  text-align: right;
@@ -220,7 +224,14 @@
    footer p{
      font-size: 2vw;
    }
-   
+  .portfolio .wrap ul{
+    
+  width: 77% !important;
+  }
+  #portfolio2 .detail{
+    
+  width: 165px;
+  }
    section#contact .wrap{
      padding-top: 100px;
    }

@@ -87,11 +87,18 @@
     width: 100%;
   }
   section#skill .wrap figure img{
-  width: 8.5vw;
-  padding: 0 1.1vw;
+  width: 10vw;
+  padding-left: 3px;
   }
+  
   section#skill .wrap h3{
     padding-bottom:3vw;
+  }
+  section#skill .wrap article:nth-child(1){
+    padding-right:0;
+  }
+  section#skill .wrap figure{
+    width: 100%;
   }
   section#skill .wrap #detail{
     padding-top:8vw;
@@ -144,6 +151,11 @@
     
   font-size: 4vw;
   width: fit-content;
+  }
+  .portfolio .wrap ul li{
+    
+  width: 127px;
+  padding: 7px;
   }
   .portfolio .wrap .detail figure img{
   width: 35vw;

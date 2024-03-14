@@ -218,6 +218,7 @@ section#portfolio2 .wrap>div>.left>h2{
 
 #portfolio2 .detail{
   flex-direction: column;
+  overflow: hidden;
 }
 section#portfolio2 .detail::before{
  
