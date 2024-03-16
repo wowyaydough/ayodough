@@ -25,7 +25,7 @@
 
 #portfolio2 .wrap ul{
   
-  width: 67%;
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
 }
