@@ -37,17 +37,14 @@
   
   display: none;
 }
-.portfolio .wrap ul li figure a{
+#portfolio2 .wrap .detail figure{
   display: block;
   overflow: hidden;
 }
-.portfolio .wrap ul li figure a img{
-}
+
 #portfolio1{
     background: linear-gradient(#7aafe0, #308bdd);
     padding-top: 128px;
-    height: 119vh;
-    min-height: 119vh;
 }
 #portfolio2 .wrap{
 
@@ -59,6 +56,8 @@
 
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 #portfolio1 div ul{
   
@@ -137,10 +136,7 @@ a.current{
 ul.portfolio1 li div{
 display:none;
 }
-.portfolio .wrap .detail figure {
-  padding-right: 0px;
 
-}
 #portfolio2 .wrap .detail figure{
   padding-bottom:23px;
   
@@ -183,9 +179,7 @@ display:none;
   font-size: 13px;
   margin-right: 18px;
 }
-.portfolio .wrap figure img{
-  transition: 1s;
-}
+
 .portfolio .wrap figure img:hover{
   transform: scale(1.1); 
 }

@@ -101,11 +101,12 @@
      
    /*  skill  */
      section#skill{
-       height: 56vh;
-       min-height: 56vh;
        padding-top: 103px;
      }
-     
+  section#skill .wrap #skill_icon{
+    
+  padding-bottom: 42px;
+  }
      section#skill .wrap figure img{  
      width: 5vw;
      }
@@ -135,13 +136,13 @@
    /*  portfolio  */
   #portfolio1{
     
-  height: 77vh;
-  min-height: 77vh;
-  padding-top: 106px;
+  padding-top: 10vw;
   }
+  #portfolio1 h2{padding-bottom: 4vw;}
+  
   #portfolio1 .wrap ul{
     
-  width: 86%;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   }
@@ -154,16 +155,30 @@
   }
   #portfolio2 h2{
     
-  padding-top: 0px;
+  padding-bottom: 4vw;
+  padding-top: 0;
   }
   #portfolio1 .wrap ul li{
     
-  width: 283px;
+  width: fit-content;
   padding: 4px;
+  }
+  #portfolio1 .wrap ul li figure{
+    
+  }
+  #portfolio1 .wrap ul li figure a img{
+    
+  width: 19vw;
+  height: 19vw;
   }
     #portfolio2 .wrap ul li{
     
-  width: 264px;
+  width: fit-content;
+  }
+  #portfolio2 .wrap .detail figure a img{
+    
+  width: 20vw;
+  height: 20vw;
   }
    section#portfolio{
      min-height: 100vh;
@@ -177,25 +192,21 @@
      }
 
   #portfolio2{ 
-  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 1vh;
-  padding-top: 70px;
   }
-     .portfolio .wrap .detail figure{
-     }
-     .portfolio .wrap .detail{
-       width:85vw;
-       display: flex;
-     }
+
+  #portfolio2 .wrap .detail figure img a{
+    
+  }
      
      #portfolio3 .wrap .detail p{
        font-size: 10pt;
      }
      #portfolio2 .wrap{
-  padding-bottom: 0px;
+       margin: 0;
+       padding-bottom: 7vw;
      }
      
     
@@ -205,9 +216,10 @@
        padding-top:20px;
      }
    
-     .portfolio .wrap{
-       margin: 0;
-     }
+  #portfolio1 .wrap{
+    
+  padding-bottom: 28vw;
+  }
    #portfolio4 .wrap{
     padding:0;
      height: 69vh;
@@ -261,9 +273,7 @@
      }
      /* contact */
      section#contact{
-       height: 98vh;
        padding-top: 92px;
-       min-height: 98vh;
      }
      section#contact h3{
        font-size: 5vw;
@@ -275,11 +285,15 @@
      }
    
      .img img{
-       width: 30vw;
+       width: 24vw;
      }
      section#contact p{
        
      font-size: 2vw;
      }
+  
+  footer{
+    
+  }
    }
    
