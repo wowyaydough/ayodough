@@ -85,7 +85,7 @@ display: none;
   
   margin: 0 auto;
   display: flex;
-  width: 66%;
+  width: 70%;
   gap: 10px;
   align-items: center;
   flex-wrap: wrap;
@@ -114,7 +114,7 @@ display: none;
 }
 #portfolio1 div ul li figure a img{
   
-  width: 34vw;
+  width: 16vw;
   transition: 1s;
 }
 
