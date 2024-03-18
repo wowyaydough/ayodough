@@ -1,0 +1,347 @@
+#hi{
+  display: flex;
+  overflow-x: hidden; 
+  width: 1903px;
+}
+.portfolio h2{
+  padding-bottom:30px;
+}
+#portfolio1 h2{
+  color:white;
+  padding-top: 50px;
+}
+
+
+#portfolio1 ul.pf>li>div{
+  position: absolute;
+display: none;
+  left: 0;
+  top: 0;
+  justify-content: center;
+  width:100%;
+  height:100%;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  background-color: rgba(0,0,0,0.7);
+}
+
+#portfolio1 ul.pf>li:hover>div{
+  display: flex;
+
+}
+#portfolio1 div h3{
+  
+  color: powderblue;
+  padding: 18px 0 1px 0;
+}
+#portfolio1 div p{
+  
+  line-height: 1.8;
+}
+#portfolio1 div>a{
+  
+  color: powderblue;
+  margin-top: 10px;
+}
+#portfolio2 h2{
+  
+  padding-top: 107px;
+  color: white;
+}
+.hidden{
+  display: none; 
+}
+
+#portfolio .wrap ul li figure{
+  
+}
+#portfolio .wrap ul li div{
+  
+  display: none;
+}
+#portfolio .wrap ul li figure a{
+  display: block;
+  overflow: hidden;
+}
+#portfolio .wrap ul li figure a img{
+}
+#portfolio1{
+    background: linear-gradient(#7aafe0, #308bdd);
+    padding-top: 128px;
+    height: 119vh;
+    min-height: 119vh;
+}
+
+
+
+
+#portfolio div{
+
+  display: flex;
+  justify-content: center;
+}
+#portfolio1 div ul{
+  
+  margin: 0 auto;
+  display: flex;
+  width: 66%;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#portfolio1 div ul li{
+  position: relative;
+}
+
+#portfolio1 div ul li figure{
+}
+#portfolio1 div ul li figure:hover::after a{ 
+  content:"";
+  display: block;
+  width: 100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.7);
+  position: absolute;
+  left:0;
+  top:0;
+}
+#portfolio1 div ul li figure a{
+  
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+#portfolio1 div ul li figure a img{
+  
+  width: 34vw;
+  transition: 1s;
+}
+
+
+#portfolio1 >.wrap >ul#portfolio_list{
+  color: powderblue;
+  justify-content: center;
+  padding-top: 7px;
+  padding-bottom: 61px;
+  display:none;
+}
+
+#portfolio1 > .wrap > ul#portfolio_list li{
+  /*! padding-bottom: 26px; */
+}
+
+
+#portfolio1 > .wrap > ul#portfolio_list li a{
+  color: powderblue;
+}
+.pf{
+
+}
+.pf.display{
+ /*! display: flex !important; */
+width: fit-content;
+}
+a.current{
+  color:#3fffff !important; 
+}
+
+#portfolio1 .wrap .detail h2{
+  color: #c0dfff;
+  padding-bottom: 14px;
+  font-size: 30px;
+  grid-column: 1 / span 2;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+#portfolio1 .wrap .detail div a{
+  color: #d5dcff;
+  padding: 5px;
+  font-size: 11pt;
+  margin: 0 4px;
+}
+
+
+#portfolio1 .wrap .detail p{
+    text-align: left;
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  line-height: 2;
+}
+ul#portfolio1 li div{
+display:none;
+}
+#portfolio1 .wrap .detail figure {
+  padding-right: 0px;
+
+}
+
+#portfolio1 .wrap .detail div:nth-child(1){
+  
+  grid-row: 1;
+  grid-column: 2;
+}
+
+
+#portfolio1 .wrap .detail div:nth-child(3){
+  
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+}
+#portfolio .wrap .detail div:nth-child(3) a{
+  color:white;
+  border:1px solid;
+  height: fit-content;
+  border-radius: 6px;
+  padding: 4px;
+  font-size: 13px;
+  margin-right: 18px;
+}
+
+#portfolio1 .wrap figure img:hover{
+  transform: scale(1.1); 
+}
+
+
+/* portfolio2  */
+section#portfolio2 .wrap .detail4{
+ 
+}
+section#portfolio2 .wrap .detail9{
+ 
+}
+section#portfolio2 .wrap .detail1.hide{
+ 
+}
+section#portfolio2 .wrap .detail.hide{
+  
+}
+section#portfolio2 .wrap .detail.detailShow{
+ 
+}
+section#portfolio2 .wrap .list a{
+  
+}
+
+section#portfolio2 .wrap .left{
+  
+}
+
+section#portfolio2 .wrap>div>.left>h2{
+
+}
+
+#portfolio .detail{
+  
+  display: flex;
+  overflow: hidden;
+  padding: 10px;
+}
+
+
+
+section#portfolio2 .wrap div .left p{
+
+}
+section#portfolio2 .wrap div .left a{
+ 
+}
+
+section#portfolio2 .wrap .right{
+  
+
+}
+
+#portfolio2 .wrap .detail figure{
+  
+}
+
+#portfolio2 .wrap .detail div:nth-child(2) div{
+  
+  justify-content: right;
+}
+
+
+#portfolio1 div ul li:nth-child(n+6){
+font-size:9pt;
+}
+#portfolio2{
+  padding-top: 17px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#338cdd,#4e85cc);
+  height: 121vh;
+  min-height: 121vh;
+}
+#portfolio2 .wrap ul{
+  
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+
+#portfolio2 .wrap{
+
+  padding-bottom: 191px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#portfolio2 div ul li{
+ position:relative;
+}
+
+
+#portfolio2 div ul li figure{
+  position: relative;
+}
+#portfolio2 div ul li>div{
+  position: absolute;
+  left: 0;
+  top: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  display: none;
+  color:white;
+}
+#portfolio2 div ul li > div h3{
+ position:relative;
+ color: powderblue;
+}
+#portfolio2 div ul li > div p{
+  
+  line-height: 1.7;
+}
+#portfolio2 div ul li > div a{
+  
+  color: powderblue;
+  padding-right: 16px;
+  padding-top: 7px;
+}
+#portfolio2 div ul li:hover>div{
+    display: flex; 
+  }
+#portfolio2 div ul li figure a {
+  
+  display: block;
+  overflow: hidden;
+}
+
+#portfolio2 div ul li figure a img{ 
+  width: 16vw;
+  transition: 1s;
+}
+#portfolio2 div ul li figure a img:hover{
+  transform: scale(1.1);
+}

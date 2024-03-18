@@ -1,0 +1,74 @@
+div#title {
+  background-image: url(../img/title2.jpg);  
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100vw;
+  z-index:-1;
+}
+div#title .wrap{
+  
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+div#title .wrap p {
+  font-size: 3vw;
+}
+div#title .wrap .typing{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.color_navy{
+  color:navy !important;
+  background-color: rgba(255,255,255,0.5);
+}
+div#title .wrap .wave{
+  padding-bottom: 218px;
+  flex-direction: column;
+  text-align: center;
+}
+div#title div .wrap{
+  
+}
+
+
+div#title .wrap h2{
+  color: white;
+  font-size: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  line-height: 2;
+
+}
+
+
+div#title .wrap p.today{
+  color: white;
+  font-size: 49px;
+  padding-bottom: 22px;
+}
+
+div#title .wrap p .textC{
+  display: initial;
+  color: #C2C2C2;
+  font-weight: 800;
+  background-color: rgba(0,0,0,0.6);
+}   
+
+
+div#title .wrap .stxt{
+
+}
+div#title .wrap .stxt p.stxtT{
+  text-align: left;
+}
+div#title .wrap .stxt p.stxtB{
+  text-align: left;
+  line-height: 1.4;
+}
