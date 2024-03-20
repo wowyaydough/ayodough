@@ -11,7 +11,6 @@
       width:100vw;
       position: relative;
       z-index: -1;
-      min-height: 85vh;
    }
   div#title .wrap .typing{
      font-size: 6.5vw; 
@@ -182,7 +181,6 @@
   #portfolio2 .wrap ul{
     
   width: 85% !important;
-  height: fit-content;
   }
     #portfolio1 .wrap .detail>div{
     
@@ -197,7 +195,6 @@
     
   width: 127px;
   padding: 6px;
-  height: fit-content;
   }
   #portfolio1 .wrap .detail figure img{
   width: 35vw;
@@ -209,7 +206,7 @@
   flex-direction: column;
   align-items: center;
   /*! margin-top: -65px; */
-  /*! height: 2%; */
+
   }
   #portfolio2{
     
@@ -300,7 +297,6 @@
   footer{
     background: #111a38;
     padding-top: 7vw;
-    height: 10vh;
   }
   footer p{
     color:white;
