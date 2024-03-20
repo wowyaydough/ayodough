@@ -46,7 +46,6 @@
      }
    /*  about  */
      section#about{
-     height: 700px;
      margin-top: -33px;
      padding-top: 103px;
      }
@@ -81,7 +80,6 @@
      }
      section#about .about::before{ 
      width: 72vw;
-     height: 56vw;
      position: absolute;
      left: -3%;
      top: -3%;
@@ -137,9 +135,6 @@
      }
    /*  portfolio  */
   #portfolio1{
-    
-  height: 77vh;
-  min-height: 77vh;
   padding-top: 106px;
   }
   #portfolio1 .wrap ul{
@@ -178,14 +173,11 @@
   }
     
    section#portfolio{
-     min-height: 100vh;
-     height: 100vh;
      }
      
 
      #hi{
        width:1024px;
-       height: 73vh;
      }
 
   #portfolio2{ 
@@ -220,15 +212,15 @@
      }
    #portfolio4 .wrap{
     padding:0;
-     height: 69vh;
+
    }
    #portfolio5 .wrap{
      padding:0;
-     height: 68vh;
+
    }
    #portfolio7 .wrap{
      padding:0;
-     height: 68vh;
+
    }
      section#portfolio .wrap{
        
