@@ -13,8 +13,6 @@
    }
  /*  about  */
    section#about{
-   height: 87vh;
-   min-height: 87vh;
    padding-top: 0;
    }
    section#about .about{
@@ -94,7 +92,6 @@
    #mportfolio{
      /*! display: block !important; */
      background-color: white;
-     height: 204vh;
      background: linear-gradient(#daf1ff,white);
    }
    #mportfolio .wrap h2{
@@ -132,7 +129,6 @@
   #portfolio .wrap ul li{
     
   width: 165px;
-  height: fit-content;
   }
  #mportfolio .wrap ul li div:nth-child(2){
  padding-bottom: 1vw;
