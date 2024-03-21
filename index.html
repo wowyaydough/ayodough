@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://ayodough.mycafe24.com/">
+   <meta property="og:description" content="웹퍼블리셔 취업을 위한 개인 포트폴리오">
+   <meta property="og:keywords" content="개인포트폴리오 개인홈페이지">
+   <meta property="og:title" content="황도연 개인홈페이지">
+   <meta name="description" content="웹퍼블리셔 취업을 위한 개인 포트폴리오"> 
+   <meta name="keywords" content="황도연 개인포트폴리오 개인홈페이지">
+   <meta name="http-equiv" content="5;url=https://wowyaydough.github.io/ayodough/">
+
+   <title>A-yo DaY!</title>
+   <link rel="stylesheet" href="css/reset.css">
+
+   <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+   <link rel="icon" href="img/logo.jpg" type="image/x-icon">
+
+    <!-- 웹폰트 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+
+   <link rel="stylesheet" href="css/common.css">
+   <link rel="stylesheet" href="css/font.css">
+   <link rel="stylesheet" href="css/header.css">
+   <link rel="stylesheet" href="css/title.css">
+   <link rel="stylesheet" href="css/about.css">
+   <link rel="stylesheet" href="css/portfolio.css">
+   <link rel="stylesheet" href="css/skill.css">
+   <link rel="stylesheet" href="css/contact.css">
+   <link rel="stylesheet" href="css/footer.css">
+   <link rel="stylesheet" href="css/responsive1024.css">
+   <link rel="stylesheet" href="css/responsive768.css">
+   <link rel="stylesheet" href="css/responsive386.css">
+
+   <!-- jQuery 연결 -->
+   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+
+<!-- // 헤더 메뉴  -->
+<script>
+$(document).ready(function(){
+   // 햄버거 버튼
+   $(".ham").click(function(){
+      $("header .wrap ul.flex").toggleClass("show");
+      return false;
+   });
+});
+</script>
+
+<!-- 포트폴리오 클릭 이벤트 -->
+<script>
+   $(document).ready(function(){
+      $(".istec").click(function(){
+         $(".pf").removeClass("display");
+         $(".portfolio_list a").removeClass("current")
+         $(this).addClass("current")
+         $(".portfolio2").addClass("display");
+         return false;
+      });
+
+      $(".tooniverse").click(function(){
+         $(".pf").removeClass("display");
+         $(".portfolio_list a").removeClass("current")
+         $(this).addClass("current")
+         $(".portfolio3").addClass("display");
+         return false;
+      });
+
+      $(".etude").click(function(){
+         $(".pf").removeClass("display");
+         $("a.current").removeClass("current")
+         $(this).addClass("current")
+         $(".portfolio4").addClass("display");
+         return false;
+      });
+
+      $(".hitejinro").click(function(){
+         $(".pf").removeClass("display");
+         $(".portfolio_list a").removeClass("current")
+         $(this).addClass("current")
+         $(".portfolio5").addClass("display");
+         return false;
+      });
+
+      $(".asty").click(function(){
+         $(".pf").removeClass("display");
+         $(".portfolio_list a").removeClass("current")
+         $(this).addClass("current")
+         $(".portfolio1").addClass("display");
+         return false;
+      });
+   });
+</script>
+
+
+
+<body>
+   <!-- header -->
+   <header>
+      <div class="wrap flex between">
+         <a href="" class="logo"><h1>A-yo DaY!</h1></a>
+         <ul class="flex">
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#portfolio1">Portfolio</a></li>
+            <li><a href="#portfolio2">Responsive</a></li>
+            <li><a href="#contact">Contact</a></li>
+         </ul>
+         <a href="" class="ham"> </a>
+      </div>
+   </header>
+   <main>
+   <!-- title -->
+   <div id="title" class="vh100">
+      <div class="wrap flex column">
+         <p class="today"> 오늘을 행복하게</p><br>
+         <p class="color_navy">나답게, 새롭게</p>  
+      </div>
+   </div>
+
+    <!-- skill -->
+    <section id="skill" class="vh100">
+      <div class="wrap">
+         <h2 class="h2">skill</h2>
+         <div class="education">
+            <h3>Education</h3>
+            <p class="top">국비지원 UI/UX 웹디자인/웹퍼블리싱 5개월 과정 수료</p>     
+         </div>
+         <div class="skill_icon">
+            <div class="boxA">
+               <article>
+                  <h4 >Skills</h4>
+                  <div class="icons">
+                     <figure>
+                        <img src="img/skill/html.png" alt="html">
+                        <img src="img/skill/css.png" alt="css">
+                        <img src="img/skill/jq.png" alt="jQuery">
+                        <img src="img/skill/js.png" alt="javascript">
+                        <img src="img/skill/w2.png" alt="웹접근성">
+                        <img src="img/skill/w3.png" alt="웹표준">
+                        <img src="img/skill/z.png" alt="emme">
+                     </figure>
+                  </div>
+                  <ul class="skills">
+                     <li>HTML</li>
+                     <li>emmet</li>
+                     <li>CSS3</li>
+                     <li>구글웹폰트</li>
+                     <li>CSS3 애니메이션</li>
+                     <li>SASS</li>
+                     <li>웹 아이콘</li>
+                     <li>JQuery</li>
+                     <li>Javascript</li>
+                     <li>slick</li>
+                     <li>반응형</li>
+                     <li>웹표준</li>
+                     <li>웹접근성</li>
+                     <li>검색엔진 최적화</li>
+                     <li>협업</li>
+                     <li>구글드라이브 공유</li>
+                  </ul>
+               </article>
+            </div>
+            <div class="boxB">
+               <article>
+                  <h4>Tools</h4>
+                  <div class="icons">
+                     <figure>
+                        <img src="img/skill/ps.png" alt="photoshop">
+                        <img src="img/skill/ai.png" alt="illustrator">
+                        <img src="img/skill/f.png" alt="firefox">
+                        <img src="img/skill/gg.png" alt="firefox">
+                        <img src="img/skill/ov.png" alt="firefox">
+                        <img src="img/skill/ss.png" alt="firefox">
+                        <img src="img/skill/vv.png" alt="firefox">
+                     </figure>
+                  </div>
+                  <ul class="tools">
+                     <li>Graphic</li>
+                     <li>Photoshop CS6</li>
+                     <li>Illustrator CS6</li>
+                     <li>Coding</li>
+                     <li>VIsual Studio Code</li>
+                     <li>FireFox 검사기</li>
+                     <li>Documents</li>
+                     <li>Google Drive</li>
+                     <li>Google Spred sheet</li>
+                     <li>storyboard</li>
+                     <li>kakao Oven</li>
+                     <li>기타</li>
+                     <li>Premiere Pro2023</li>
+                     <li>After Effects 2023</li>
+                  </ul>
+               </article>
+            </div>
+         </div>
+         
+      </div>
+   </section>
+ 
+
+   <!-- portfolio1 -->
+   <section id="portfolio1" class="vh100 portfolio">
+      <div class="wrap">
+         <h2 class="h2">portfolio</h2>
+         <ul class="pf">
+            <li class="ACCUNIQ">
+               <figure>
+                  <a href="https://wowyaydough.github.io/pf1-accuniq/" target="_blank"><img src="img/portfolio/accuniq.jpg" alt="asty"></a>
+               </figure>
+               <div>
+                  <h3>ACCUNIQ</h3>
+                  <p>사용 기술 : HTML, CSS, jQuery</p>
+                  <p>참여도 : 90%</p>
+                  <p>작업기간 : 2023.11.27~2023.12.21 </p>
+                  <a href="https://wowyaydough.github.io/pf1-accuniq/" target="_blank">바로가기</a>
+               </div>
+            </li>
+            <li class="LionHeart">
+               <figure>
+                  <a href="https://wowyaydough.github.io/LionHeart/" target="_blank"><img src="img/portfolio/lionheart.jpg" alt="lionheart"></a>
+               </figure>
+               <div>
+                  <h3>라이온하트</h3>
+                     <p>사용기술 : HTML, CSS, jQuery</p>
+                     <p>참여도 : 100%</p>
+                     <p>작업기간 : 2023.11.13~2024.11.29</p>
+                     <a href="https://wowyaydough.github.io/LionHeart/" target="_blank">바로가기</a>
+               </div>
+            </li>
+            <li class="semine">
+               <figure>
+                  <a href="https://wowyaydough.github.io/Semine/" target="_blank"><img src="img/portfolio/samine.jpg" alt="samine"></a>
+               </figure>
+               <div>
+                  <h3>새미네</h3>
+                     <p>사용기술 : HTML, CSS, jQuery</p>
+                     <p>참여도 : 100%</p>
+                     <p>작업기간 : 2023.12.13~2024.1.10</p>
+                     <a href="https://wowyaydough.github.io/Semine/" target="_blank">바로가기</a>
+               </div>
+            </li>
+            <li class="Carrot">
+               <figure>
+                  <a href="https://wowyaydough.github.io/Carrot/" target="_blank"><img src="img/portfolio/Carrot.jpg" alt="Carrot"></a>
+               </figure>
+               <div>
+                  <h3>캐롯손해보험</h3>
+                  <p>사용기술 : HTML, CSS, jQuery</p>
+                  <p>참여도 : 100%</p>
+                  <p>작업기간 : 2023.12.19~2024.02.20</p>
+                  <a href="https://wowyaydough.github.io/Carrot/" target="_blank">바로가기</a>
+               </div>
+            </li>
+            <li class="BaskinRobbins">
+               <figure>
+                  <a href="https://wowyaydough.github.io/BaskinRobbins/" target="_blank"><img src="img/portfolio/BR.jpg" alt="baskinrobbins"></a>
+               </figure>
+               <div>
+                  <h3>배스킨라빈스</h3>
+                  <p>사용기술 : HTML, CSS, jQuery</p>
+                  <p>참여도 : 100%</p>
+                  <p>작업기간 : 2023.12.19~2024.02.20</p>
+                  <a href="https://wowyaydough.github.io/BaskinRobbins/" target="_blank">바로가기</a>
+               </div>
+            </li>
+            <li class="Asty">
+               <figure>
+                  <a href="https://wowyaydough.github.io/Asty/" target="_blank"><img src="img/portfolio/asty.jpg" alt="asty"></a>
+               </figure>
+               <div>
+                  <h3>아스티</h3>                
+                  <p>사용기술 : HTML, CSS, jQuery</p>
+                  <p>참여도 : 100%</p>
+                  <p>작업기간 : 2024.01.04~2024.01.24</p>
+                  <p>가장 처음 이미지 클론을 한 포트폴리오 입니다. <br>
+                     jQuery를 사용하여 창문 이미지효과를 주었습니다.
+                  </p>
+                  <a href="https://wowyaydough.github.io/Asty/" target="_blank">바로가기</a>
+               </div>
+            </li>
+            <li class="ISTEC">               
+               <figure>
+                  <a href="https://wowyaydough.github.io/ISTEC/" target="_blank"><img src="img/portfolio/ISTEC.jpg" alt="ISTEC"></a>
+               </figure>
+               <div>
+                  <h3>ISTEC</h3>
+                  <p>사용기술 : HTML, CSS, CSS 애니메이션</p>
+                  <p>참여도 : 100%</p>
+                  <p>완성도 : 70%</p>
+                  <p>작업기간 : 2023.12.18~2024.02.15</p>
+                  <p>3번째 페이지를 작업하면서 <br>
+                     CSS애니메이션과 hover기능에 대해 <br>
+                     이해할 수 있게 되었습니다<br>
+                     후반 애니메이션 작업을 진행할 예정입니다.<br></p>
+                     <a href="https://wowyaydough.github.io/ISTEC/" target="_blank">바로가기</a>
+                  
+               </div>              
+            </li>
+         </ul>
+      </div>
+   </section>
+
+    <!-- portfolio2 -->
+    <section id="portfolio2" class="vh100 portfolio">
+      <div class="wrap">
+         <h2 class="h2">Responsive</h2>
+         <ul>
+           <li class="gjcity">  
+               <figure>
+                  <a href="https://wowyaydough.github.io/gjcity/" target="_blank"><img src="img/portfolio/gjcity.jpg" alt="gwangju-city"></a>
+               </figure>
+               <div class="detail">
+                  <h3>광주시청</h3>
+                  <p>사용기술 : HTML, CSS, jQuery</p>
+                  <p>참여도 : 100%</p>
+                  <p>작업기간 : 2023.3.14~2024.03.20</p>
+                  <div class="flex">
+                     <a href="https://wowyaydough.github.io/gjcity/" target="_blank">바로가기</a>
+                     <a href="javascript:void(window.open('https://wowyaydough.github.io/gjcity/','Tooniverse','width=1024px'))">1024px</a> 
+                     <a href="javascript:void(window.open('https://wowyaydough.github.io/gjcity/','Tooniverse','width=780px'))">780px</a> 
+                     <a href="javascript:void(window.open('https://wowyaydough.github.io/gjcity/','Tooniverse','width=640px'))">640px</a> 
+                     <a href="javascript:void(window.open('https://wowyaydough.github.io/gjcity/','Tooniverse','width=480px'))">480px</a> 
+                  </div>
+               </div>
+            </li>
+            <li class = "Tooniverse">                 
+                  <figure>
+                     <a href="https://wowyaydough.github.io/Tooniverse/" target="_blank"><img src="img/portfolio/tooniverse.jpg" alt="Tooniverse"></a>
+                  </figure>    
+                  <div class="detail">
+                     <h3>투니버스</h3>
+                     <p>사용기술 : HTML, CSS</p>
+                     <p>참여도 : 100%</p>
+                     <p>완성도 : 95%</p>
+                     <p>작업기간 : 2023.01.12~2024.01.17</p>
+                     <div class="flex">
+                        <a href="https://wowyaydough.github.io/Tooniverse/" target="_blank">바로가기</a>
+                        <a href="javascript:void(window.open('https://wowyaydough.github.io/Tooniverse/','Tooniverse','width=959px'))">959px</a> 
+                     </div>
+                  </div>    
+            </li>
+            <li class="Etude">
+                  <figure>
+                     <a href="https://wowyaydough.github.io/Etude/" target="_blank"><img src="img/portfolio/Etude.jpg" alt="Etude"></a>
+                  </figure>
+                  <div class="detail">
+                     <h3>에뛰드</h3>
+                     <p>사용기술 : HTML, CSS, jQuery</p>
+                     <p>참여도 : 100%</p>
+                     <p>완성도 : 99%</p>
+                     <p>작업기간 : 2023.02.08~2024.02.15</p>
+                     <p>jQuery를 사용하여 모바일 햄버거<br>
+                        버튼 기능을 구현하였습니다.</p>
+                     <div class="flex">
+                        <a href="https://wowyaydough.github.io/Etude/" target="_blank">바로가기</a>
+                        <a href="javascript:void(window.open('https://wowyaydough.github.io/Etude/','Etude','width=770px'))">770px</a>
+                     </div>
+                  </div>
+            </li>
+            <li class="hitejinro">
+                  <figure>
+                     <a href="https://wowyaydough.github.io/pf4_hitejinro/" target="_blank"><img src="img/portfolio/hitejinro.jpg" alt="hitejinro"></a>
+                  </figure>
+                  <div class="detail">
+                  <h3>하이트진로</h3>
+                     <p>사용기술 : HTML, CSS, jQuery</p>
+                     <p>참여도 : 50%</p>
+                     <p>작업기간 : 2024.01.22~2024.02.22</p>
+                     <div class="flex">
+                        <a href="https://wowyaydough.github.io/pf4_hitejinro/" target="_blank">바로가기</a>
+                        <a href="javascript:void(window.open('https://wowyaydough.github.io/pf4_hitejinro/','HiteJinro','width=1440px'))">1440px</a>
+                        <a href="javascript:void(window.open('https://wowyaydough.github.io/pf4_hitejinro/','HiteJinro','width=1200px'))">1200px</a>
+                        <a href="javascript:void(window.open('https://wowyaydough.github.io/pf4_hitejinro/','HiteJinro','width=786px'))">786px</a>
+                     </div>
+                  </div>    
+            </li>
+         </ul>
+      </div>
+   </section>
+
+   <!-- contact -->
+   <section id="contact" class="vh100">
+      <div class="wrap">
+         <h2 class="h2">
+         CONTACT
+         </h2>
+         <div class="about flex">
+            <div class="about_qoute">
+               <p class="bigger">
+                  한 걸음씩, 꾸준히
+               </p>
+               <p>열정을 가지고 단단해지겠습니다</span></p>
+            </div>
+            <div class="img">
+               <div class="img_left">
+                  <figure>
+                     <img src="img/title3.jpg" alt="개인사진" class="animation_about"> 
+                  </figure>
+               </div>
+               <div class="img_right">
+                  <figure>
+                     <img class=qrcode src="img/qr.jpg" alt="카카오 오픈채팅 QR코드">
+                  </figure>
+               </div>
+            </div>
+            <div class="info">
+               <p>e-mail :</p>
+               <p>makemyownwaysecond@gmaill.com</p>
+               <p><br></p>
+               <p>카카오 오픈채팅 : </p>
+               <p><a href="https://open.kakao.com/o/su8dZkeg" target="_blank">https://open.kakao.com/o/su8dZkeg</a></p>
+            </div>
+         </div>
+      </div>
+
+   </section>
+
+
+   </main>   
+
+   <!-- footer -->
+   <footer>
+      <p>Copyright © 2024 A-yo day!</p>
+      <p>해당 사이트는 개인 포트폴리오 용도로 제작되었습니다.</p>
+   </footer>
+
+
+</body>
+</html>
