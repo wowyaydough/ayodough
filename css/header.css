@@ -1,0 +1,159 @@
+body{
+   overflow-x: hidden;
+}
+
+header{
+   position: fixed;
+   z-index: 15;
+   width: 100%;
+} 
+
+header .wrap{
+   align-items: center;
+}
+header .wrap a.logo h1{
+   margin-bottom: 21px;
+}
+
+header .wrap a.logo h1{
+   font-size: 0;
+   background-image: url(../img/logo_black.png);
+   display: block;
+   width: 7vw;
+   height: 55px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   margin-top: 4px;
+}
+header .wrap ul li a{
+   color: white;
+   font-weight: 300;
+   font-size: 25px;
+   text-transform: capitalize;
+   position: absolute;
+   top: 7px;
+}
+header .wrap ul li:nth-child(1) a{
+   right: 40px;
+}
+header .wrap ul li:nth-child(2) a{
+   
+   right: 54px;
+}
+header .wrap ul li:nth-child(3) a{
+   
+   right: 23px;
+}
+header .wrap ul li:nth-child(4) a{
+   
+   right: 24px;
+}
+header .wrap ul li a::before{
+  content:"";
+  width: 133px;
+  height: 56px; 
+  display: block;
+  position: absolute;
+  top: -19px; 
+  border-radius: 10px 10px 0 0;
+  z-index: -1;
+  opacity: 0.7;
+
+}
+header .wrap ul li:nth-child(1) a::before{
+   background-color:#f59b00;
+   right: -30px;
+}
+header .wrap ul li:nth-child(2) a::before{
+   background-color:green;
+   right: -44px;
+}
+header .wrap ul li:nth-child(3) a::before{
+   background-color:blue;
+   right: -13px;
+}
+header .wrap ul li:nth-child(4) a::before{
+   background-color:gray;
+   right: -20px; 
+}
+header .wrap ul li a:hover::before{
+   background-color:rgba(0,0,0,0.1);
+}
+header .wrap ul li:nth-child(1) a:hover::before{
+   border:1px solid #ffa500;
+   
+
+}
+header .wrap ul li:nth-child(2) a:hover::before{
+   border:1px solid green;
+  
+}
+header .wrap ul li:nth-child(3) a:hover::before{
+   border:1px solid blue;
+
+}
+header .wrap ul li:nth-child(4) a:hover::before{
+   border:1px solid gray;
+
+}
+header .wrap ul li:nth-child(1) a:hover{
+   color:#ffa500;
+
+}
+header .wrap ul li:nth-child(2) a:hover{
+   color:green;
+
+}
+header .wrap ul li:nth-child(3) a:hover{
+   color:blue;
+
+}
+header .wrap ul li:nth-child(4) a:hover{
+   color:gray;
+
+}
+header .wrap ul a.currentT{
+color:#1affea;
+}
+
+header .wrap ul{
+   align-items: center;
+   margin-top: 19px;
+}
+header .wrap::before{
+   content:"";
+   display: block;
+   width: 100%;
+   height: 2px;
+   border-bottom: 1px solid;
+   position: absolute;
+   top: 62px;
+   left: 0px;
+}
+
+header .wrap ul li{
+   width: 133px;
+   box-sizing: border-box;
+   text-align: center;
+   margin-left: -3px;
+   position: relative;
+   height: 56px;
+}
+header .wrap ul li:nth-child(1){
+   margin-right: 4px;
+}
+header .wrap ul li:nth-child(2){
+   
+   margin-right: 4px;
+}
+header .wrap ul li:nth-child(3){
+   margin-right: -1px;
+}
+header .wrap ul li:nth-child(4){
+   margin-right: -5px;
+}
+.ham{
+   
+   display: none;
+}
