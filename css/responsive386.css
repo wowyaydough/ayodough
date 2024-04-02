@@ -104,6 +104,9 @@
   #portfolio1 .wrap ul.pf li:first-child{
   display: none !important;   
   }
+  #contact{
+  padding-top: 27vw;
+  }
   #contact .wrap{
   padding: 0;
   margin-top: 23vw;
