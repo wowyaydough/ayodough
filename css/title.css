@@ -7,6 +7,7 @@
     background-image: url(https://cdn.pixabay.com/photo/2024/02/17/16/04/ai-generated-8579656_1280.jpg);
     background-position-y: -22%;
     opacity: 0.7;  
+    padding-top: 11vw;
 }
 
 #title .wrap{
