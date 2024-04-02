@@ -1,0 +1,134 @@
+@media screen and (max-width:386px){
+  .h2{
+    font-size: 10vw;
+  }
+  
+  .ham{
+  top: 27px;
+  right: 29px;
+  }
+  
+  .ham::after{ 
+  height: 6px;
+  }
+ 
+  header{
+    
+  }
+  header .wrap a.logo {
+  margin-top: 5px;
+  transform: scale(126%);
+  }
+  header .wrap ul.show{  
+  }
+
+  header .wrap ul li a{
+  font-size: 15px;
+  }
+  header .wrap ul li:nth-child(1) a{
+  right: 59px;
+  top: 4px;
+  }
+  header .wrap ul li:nth-child(2) a{
+  right: 81px;
+  top: 4px;
+  }
+  header .wrap ul li:nth-child(3) a{
+  right: 83px;
+  top: 6px;
+  font-size: 13px;
+  }
+  header .wrap ul li:nth-child(4) a{
+  right: 93px;
+  top: 4px;
+  font-size: 15px;
+  }
+  header .wrap ul li a::before{
+    
+  top: -24px;
+  transform: scale(83%);
+  width: 80px;
+  }
+  header .wrap ul li:nth-child(1) a::before{
+  right: -15px;
+  }
+  header .wrap ul li:nth-child(2) a::before{
+  right: -23px;
+  top: -25px;
+  }
+  header .wrap ul li:nth-child(3) a::before{
+  right: -10px;
+  top: -27px;
+  }
+  header .wrap ul li:nth-child(4) a::before{
+  right: -11px;
+  top: -25px;
+  }
+
+  #title {
+    background-position-y: 39vw;
+  }
+  #title .wrap{
+    padding:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #title .wrap .ttd{
+  margin-top: -95vw;
+  } 
+  #title .wrap .ttd .today{
+  font-size: 12vw;
+  }
+  .icons figure{
+    flex-wrap: wrap;
+  }
+  #about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16vw;
+  }
+  #about .wrap{
+  padding-top: 0;
+  }
+  #about .wrap h2{
+    
+  padding-top: 18vw;
+  }
+  #about .wrap > div p{
+    line-height: 30px;
+  }
+  #skill .wrap h2{
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-top: 33vw;
+  }
+  #portfolio1 .wrap ul.pf li:first-child{
+  display: none !important;   
+  }
+  #contact .wrap{
+  padding: 0;
+  height: 100%;
+  display: block;
+  }
+  #contact{
+  padding-top: 34vw;
+  }
+  #contact .wrap .about{
+  margin-top: 14vw;
+  margin-bottom: 0;
+  }
+  #contact .wrap h2{
+  margin-top: 0;
+  padding: 0;
+  }
+  #contact .wrap .about .img .img_right figure {
+    padding-bottom: 0
+  }
+  footer p{
+  font-size: 3.5vw;
+  }
+}
