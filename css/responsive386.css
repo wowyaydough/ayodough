@@ -104,13 +104,23 @@
   #portfolio1 .wrap ul.pf li:first-child{
   display: none !important;   
   }
+  #contact .wrap{
+  padding: 0;
+  margin-top: 23vw;
+  height: 100%;
+  display: block;
+  }
   #contact .wrap .about{
   margin-top: 0;
-  margin-bottom: 53vw;
+  margin-bottom: 0;
   }
   #contact .wrap h2{
-    
   margin-top: 0;
+  padding: 0;
+  margin-bottom: 12vw;
+  }
+  #contact .wrap .about .img .img_right figure {
+    padding-bottom: 0
   }
   footer p{
   font-size: 3.5vw;
