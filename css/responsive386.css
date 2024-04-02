@@ -105,11 +105,12 @@
   display: none !important;   
   }
   #contact .wrap .about{
-  margin-top: 8vw;
+  margin-top: 0;
+  margin-bottom: 53vw;
   }
   #contact .wrap h2{
     
-  margin-top: -35vw;
+  margin-top: 0;
   }
   footer p{
   font-size: 3.5vw;
