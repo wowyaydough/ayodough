@@ -1,0 +1,96 @@
+#skill{
+    background: white;
+  position: relative;
+}
+
+#skill .wrap{
+    height: 100%;
+}
+
+
+
+
+#skill .wrap h2{
+    padding-top: 128px;
+    padding-bottom: 50px;
+    color: green;
+}
+.h2{
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 5vw;
+}
+#skill .wrap .education{
+
+  padding-bottom: 71px;
+}
+#skill .wrap .education h3{
+  font-size: 22px;
+  color: #666;
+}
+#skill .wrap .education p{
+  font-size: 15px;
+  line-height: 1.6;
+  color: white;
+}
+#skill .wrap .skill_icon{
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#skill .wrap .skill_icon>div{
+  
+  /*! width: 50%; */
+}
+#skill .wrap .skill_icon .boxA{
+
+}
+#skill .wrap .skill_icon .boxA article{
+
+}
+#skill h4{
+  font-size: 28px;
+  text-align: left;
+  color: white;
+  margin-bottom: 21px;
+}
+.icons{
+
+  display: flex;
+}
+.skill_icon article ul{
+  display: flex;
+  flex-wrap: wrap;
+  width: 87%; 
+  margin: auto;
+}
+.skill_icon article ul li{ 
+  width: calc(100% / 7);
+  line-height: 2;
+  padding-left: 16px;
+  color: #055605;
+}
+.icons figure{
+
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.icons figure img{
+  width: 63px;
+  border-radius:18px;
+  padding: 0 10px;
+}
+#skill .wrap .skill_icon .boxB{
+
+}
+#skill .wrap .skill_icon .boxB article{
+
+}
+#skill .wrap .skill_icon .boxB article h4{
+
+}
