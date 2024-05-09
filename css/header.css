@@ -64,6 +64,7 @@ header .wrap ul li a::before{
 header .wrap ul li:nth-child(1) a::before{
    background-color:#f59b00;
    right: -30px;
+   display:none;
 }
 header .wrap ul li:nth-child(2) a::before{
    background-color:green;
