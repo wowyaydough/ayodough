@@ -1,6 +1,7 @@
 #about{
 
   position: relative;
+  display:none;
 }
 
 #about .wrap{
